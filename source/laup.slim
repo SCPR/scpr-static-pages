@@ -1,0 +1,58 @@
+- content_for(:page_title) do
+  | LAUP - A KPCC Underwriter
+  
+- content_for(:additional_head) do
+  ==stylesheet_link_tag "laup"
+  script src="//use.typekit.net/cuo6ctd.js" type="text/javascript"
+  javascript:
+    try{Typekit.load();}catch(e){}
+
+// Page Header
+header.masthead
+  .masthead-inner.bound
+    h3.underwriter-brand: a href="http://www.laup.net" title="LAUP" LAUP
+    p.fineprint A KPCC Sponsor Message
+    aside
+      a.button.green href="#" Learn more about LAUP
+
+// Page Hero
+.hero.billboard
+  .hero-inner.bound
+    h1 He’ll earn 50% more than his peers.
+    .media-wrapper
+      a.play-button href="#" play video
+      
+// Main Content
+.main
+  section.warmup
+    .warmup-inner.bound
+      h2 Preschool. It’s not just for kids.™
+      p Study after study shows quality preschool is an educational springboard that prepares children to learn and succeed in education, their careers and in life.
+      p Neuroscientists have found that early experiences – particularly from birth to age five– shape a child’s brain and development and can have long-lasting effects, ultimately preparing them for a brighter future.
+      p: strong Preschool matters and LAUP is the trusted preschool authority in Los Angeles County.
+  section.actions
+    .actions-inner.bound
+      h4: a href="#" Find a Local Preschool
+      .newsletter-signup
+        form action="post"
+          label Sign up for LAUP’s email newsletter
+          input type="email" value="" placeholder="Your email address" name="email"
+          input type="submit" value="Subscribe" name="submit"
+  section.reasons
+    .reasons-inner.bound
+      h2 Why LAUP?
+      ul.reasons-list
+        li.book Children enrolled in LAUP programs exceed predetermined literacy and math goals from fall to spring semesters.
+        li.attention 99% of LAUP children exhibited a high level of attention required for success in kindergarten as opposed to the national average of 84%.
+        li.alphabet After a year of quality preschool, children in an LAUP program improved from identifying 12 letters of the alphabet to identifying 18, while the national standard is 10 letters.
+        li.lightbulb After a year of quality preschool, children in LAUP programs surpassed the national average in math skills by approximately two points.
+  section.about
+    .about-inner.bound
+      h2 About LAUP
+      p Los Angeles Universal Preschool (LAUP) is a non-profit organization whose mission is to provide access to quality preschool education for children in Los Angeles County. We believe all children deserve the best start in life, and a quality preschool education provides them with a solid foundation for success.
+// Page Footer
+footer.affiliation
+  .affiliation-inner.bound
+    p: em LAUP is a proud supporter of Southern California Public Radio
+    h3.kpcc-brand: a href="http://www.scpr.org" title="89.3 KPCC, Southern California Public Radio" 89.3 KPCC
+    p.fineprint: a href="#" Learn more about underwriting at KPCC
