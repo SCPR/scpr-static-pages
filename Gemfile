@@ -3,3 +3,7 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.13"
+gem "middleman-livereload"
+gem "middleman-bourbon"
+gem "middleman-smusher"
+gem "slim"
