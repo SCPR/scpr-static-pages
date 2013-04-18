@@ -1,7 +1,11 @@
 @import 'bourbon';
 
-// Variables
+// #####################################################################################################################
+// VARIABLES
+// #####################################################################################################################
+
 $white:         #ffffff;
+$gray:          #898989;
 $brandBlue:     #0071bc;
 $lightBlue:     #16b1e7;
 $darkBlue:      #005499;
@@ -9,6 +13,134 @@ $brandGold:     #f7941d;
 $green:         #8bc73f;
 
 
+// #####################################################################################################################
+// MIXINS
+// #####################################################################################################################
+
+// Retina-ified BG images
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+// Hide text offscreen
+@mixin hide-text() {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+// #####################################################################################################################
+// DEFAULT ELEMENT STYLES
+// #####################################################################################################################
+
 body {
   font-family:"myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:bold;
+}
+
+
+// Buttons
+.button {
+  border-radius:6px;
+  color:$white;
+  display:inline-block;
+  font-size:18px;
+  font-weight:bold;
+  padding:15px;
+}
+
+
+// Da' Grid
+.bound {
+  margin:0 auto;
+  max-width:940px;
+  width:65.2%;
+}
+
+
+// #####################################################################################################################
+// SECTION STYLES
+// #####################################################################################################################
+
+// Masthead
+header.masthead {
+  background:$white;
+  height:95px;
+  .masthead-inner.bound {
+    max-width:1440px;
+    position:relative;
+    text-align:center;
+    width:90%;
+  }
+  h3.underwriter-brand {
+    background:$white;
+    border-bottom:5px solid $darkBlue;
+    display:block;
+    margin:0;
+    padding:0 20px 20px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:136px;
+    height:184px;
+    z-index:3;
+    a {
+      background:url("../images/1x/laup-logo.png") no-repeat;
+      @include image-2x("../images/1x/laup-logo.png", 272px, 378px);
+      display:block;
+      @include hide-text();
+      width:136px;
+      height:189px;
+    }
+  }
+  p.fineprint {
+    color:$gray;
+    display:inline-block;
+    text-align:center;
+  }
+}
+
+// Hero
+.hero {;
+  h1 {
+    color:$white;
+    text-shadow:0 0 4px rgba(0,0,0,0.5);
+  }
+  figure {
+    position:relative;
+    img {
+      width:100%;
+      height:auto;
+    }
+    figcaption {
+      position:absolute;
+      width:100%;
+      top:0;
+      left:0;
+      text-align:center;
+    }
+  }
+  
+}
+
+// Warmup
+.warmup {
+  background:$brandBlue;
+  color:$white;
+  padding:70px 0;
+  h2 {
+    text-align:center;
+  }
 }
