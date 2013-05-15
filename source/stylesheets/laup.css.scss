@@ -178,7 +178,7 @@ header.masthead {
     position:relative;
     .play-button {
       background:url("../images/1x/laup-play-btn.png") no-repeat;
-      @include image-2x("../images/laup-play-btn.png", 280px, 280px);
+      @include image-2x("../images/laup-play-btn.png", 140px, 140px);
       color:$white;
       display:block;
       @include px-to-ems(font-size, 32);
@@ -382,7 +382,7 @@ footer.affiliation {
     margin:0 0 18px;
     a {
       background:url("../images/1x/kpcc-logo.png") no-repeat;
-      @include image-2x("../images/kpcc-logo.png", 412px, 60px);
+      @include image-2x("../images/kpcc-logo.png", 206px, 30px);
       display:block;
       @include hide-text;
       width:206px;
@@ -460,7 +460,7 @@ footer.affiliation {
     }
   }
   .hero {
-    background:$brandBlue url("../images/laup-img-boy.jpg") -28px top no-repeat;
+    background:$brandBlue url("../images/laup-img-boy.jpg") left top no-repeat;
     background-size:960px 450px;
     height:30em;
     h1 {
@@ -500,10 +500,42 @@ footer.affiliation {
     background-size:960px 420px;
     height:30em;
     .about-inner {
+      bottom:30px;
       p {
         @include px-to-ems(font-size, 22);
-        @include px-to-ems(line-height, 28);
+        font-weight:600;
+        @include px-to-ems(line-height, 24);
       }
+    }
+  }
+}
+
+@media (max-width:480px) {
+  .hero {
+    background:$brandBlue url("../images/laup-img-boy.jpg") -12px top no-repeat;
+    background-size:720px 336px;
+    height:28em;
+    h1 {
+      margin-bottom:28px;
+    }
+    .media-wrapper .play-button {
+      
+    }
+  }
+  .warmup {
+    padding-top:0;
+  }
+  .about {
+    position:relative;
+    &:before {
+      background:rgba(0,0,0,0.25);
+      content:"";
+      display:block;
+      position:absolute;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
     }
   }
 }
