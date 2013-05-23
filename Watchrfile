@@ -1,1 +1,0 @@
-watch("source") { system("bundle exec middleman build") }
