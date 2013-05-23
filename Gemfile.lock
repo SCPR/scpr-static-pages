@@ -149,4 +149,5 @@ DEPENDENCIES
   middleman-bourbon
   middleman-livereload
   middleman-smusher
+  rack
   slim

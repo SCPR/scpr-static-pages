@@ -1,11 +1,5 @@
 use Rack::Static,
-
-  ###################
-  # Regular expression to include all pages. 
-  # You could also write something like ["index.html", "about_us.html"]
-  ###################
-
-  :urls => [/./],
+  :urls => ["/images", "/js", "/css"],
   :root => "build"
 
 run lambda { |env|
