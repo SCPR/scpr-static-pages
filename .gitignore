@@ -12,3 +12,9 @@
 
 # Ignore Sass' cache
 /.sass-cache
+
+# Ignore other junk
+.DS_Store
+*.swp
+*.swo
+Gemfile.lock
