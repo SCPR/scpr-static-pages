@@ -79,7 +79,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 // Da' Grid
 .bound {
   margin:0 auto;
-  max-width:940px;
+  min-width:940px;
   width:65.2%;
 }
 
@@ -87,19 +87,19 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 header.masthead {
   background:#fff;
   height:38px;
-  h3.brand {
-    margin:0;
-    padding-top:10px;
+}
+h3.brand {
+  margin:0;
+  padding-top:10px;
+  width:125px;
+  height:18px;
+  a {
+    background:url("../images/ipad-landing/1x/logo.png") no-repeat;
+    @include image-2x("../images/ipad-landing/logo.png",250px, 36px);
+    display:block;
+    @include hide-text;
     width:125px;
     height:18px;
-    a {
-      background:url("../images/ipad-landing/1x/logo.png") no-repeat;
-      @include image-2x("../images/ipad-landing/logo.png",250px, 36px);
-      display:block;
-      @include hide-text;
-      width:125px;
-      height:18px;
-    }
   }
 }
 
@@ -120,7 +120,7 @@ header.masthead {
     color:#fff;
     @include px-to-ems(font-size, 54);
     letter-spacing:-0.03em;
-    margin-top:0;
+    margin:0 0 4em;
     position:relative;
     text-shadow:0 0 4px rgba(0,0,0,0.5);
   }
@@ -177,5 +177,63 @@ header.masthead {
       text-align:center;
     }
   }
-  
+}
+
+// Feature Styles
+.features {
+  padding-top:5em;
+  .clearfix {
+    @include clearfix();
+  }
+  dl.feature {
+    float:left;
+    margin-right:3.2%;
+    padding-top:96px;
+    text-align:center;
+    width:31.148936%;
+    &:last-child {
+      margin-right:0;
+    }
+    &.rewind {
+      background:url('../images/ipad-landing/1x/ico-rewind.png') no-repeat center top;
+      @include image-2x("../images/ipad-landing/ico-rewind.png",70px, 77px);
+    }
+    &.read {
+      background:url('../images/ipad-landing/1x/ico-read.png') no-repeat center 14px;
+      @include image-2x("../images/ipad-landing/ico-read.png",86px, 50px);
+    }
+    &.programs {
+      background:url('../images/ipad-landing/1x/ico-programs.png') no-repeat center top;
+      @include image-2x("../images/ipad-landing/ico-programs.png",35px, 76px);
+    }
+    dt {
+      color:#00b9f3;
+      @include px-to-ems(font-size, 24);
+      font-weight:400;
+      margin-bottom:1em;
+    }
+    dd {
+      color:#252525;
+      @include px-to-ems(font-size, 18);
+      @include px-to-ems(line-height, 28);
+      margin:0;
+    }
+  }
+}
+
+// Footer styles
+footer {
+  margin-top:10em;
+  padding-bottom:1em;
+  text-align:center;
+  h3.brand {
+    display:inline-block;
+  }
+  p, a {
+    color:#808080;
+    @include px-to-ems(font-size, 14);
+  }
+  a:hover {
+    text-decoration:underline;
+  };
 }
