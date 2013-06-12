@@ -1,3 +1,3 @@
-# SCPR Underwriting Pages
+# SCPR Static Pages
 
-### A project for managing front-end builds of KPCC underwriter landing pages.
+### A project for managing front-end builds of KPCC static landing pages.

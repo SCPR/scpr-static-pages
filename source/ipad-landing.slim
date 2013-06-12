@@ -1,0 +1,49 @@
+- content_for(:page_title) do
+  | Coming Soon: KPCC for iPad
+  
+- content_for(:additional_head) do
+  ==stylesheet_link_tag "ipad"
+  link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"
+
+// Page Header
+header.masthead
+  .masthead-inner.bound
+    h3.brand: a href="http://www.scpr.org" title="KPCC" KPCC
+
+// Page Hero
+.hero.billboard
+  figure
+    img src="images/ipad-landing/ipad-hero.jpg" alt="KPCC on the iPad - Coming Soon"
+    figcaption
+      .hero-inner.bound
+        p.teaseline Coming soon to your iPad
+        h1 Tagline ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla nulla in velit.
+        .signup-form
+          form
+            label Email me when it's available
+            input type="email" name="email" placeholder="Your email address"
+            input type="submit" value="Let me know!"
+      
+// Main Content
+.main
+  aside.features
+    .features-inner.bound
+      dl.feature.rewind
+        dt Key Feature Ipsum Dolor
+        dd Vestibulum in feugiat nunc, vel scelerisque erat. Ut volutpat ut sem a condimentum. Suspendisse commodo ullamcorper diam id malesuada. Suspendisse potenti.
+      dl.feature.read
+        dt Key Feature Ipsum Dolor
+        dd Vestibulum in feugiat nunc, vel scelerisque erat. Ut volutpat ut sem a condimentum. Suspendisse commodo ullamcorper diam id malesuada. Suspendisse potenti.
+      dl.feature.programs
+        dt Key Feature Ipsum Dolor
+        dd Vestibulum in feugiat nunc, vel scelerisque erat. Ut volutpat ut sem a condimentum. Suspendisse commodo ullamcorper diam id malesuada. Suspendisse potenti.
+
+// Footer
+footer
+  .footer-inner.bound
+    h3.brand: a href="http://www.scpr.org" title="KPCC" KPCC
+    p
+      a href="http://www.scpr.org/terms" Terms & Conditions 
+      span | 
+      a href="http://www.scpr.org/privacy" Privacy 
+      span| © 2013 Southern California Public Radio
