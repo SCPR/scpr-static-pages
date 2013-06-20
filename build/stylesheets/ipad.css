@@ -87,8 +87,8 @@ h3.brand {
       /* line 98, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
       h3.brand a {
         /* on retina, use image that's scaled by 2 */
-        background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/logo.png");
-        background-size: 250px 36px; } }
+        background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/logo.png");
+        background-size: 125px 18px; } }
 
 /* line 109, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
 .hero {
@@ -216,7 +216,7 @@ h3.brand {
         /* line 215, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.breaking {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-breaking.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-breaking.png");
           background-size: 60px 68px; } }
     /* line 219, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.listen-read {
@@ -225,7 +225,7 @@ h3.brand {
         /* line 219, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.listen-read {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-listen-read.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-listen-read.png");
           background-size: 127px 58px; } }
     /* line 223, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.morning-evening {
@@ -234,7 +234,7 @@ h3.brand {
         /* line 223, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.morning-evening {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-morning-evening.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-morning-evening.png");
           background-size: 77px 77px; } }
     /* line 227, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.news {
@@ -243,7 +243,7 @@ h3.brand {
         /* line 227, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.news {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-news.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-news.png");
           background-size: 62px 76px; } }
     /* line 231, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.programs {
@@ -252,7 +252,7 @@ h3.brand {
         /* line 231, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.programs {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-programs.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-programs.png");
           background-size: 35px 76px; } }
     /* line 235, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.queue {
@@ -261,7 +261,7 @@ h3.brand {
         /* line 235, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.queue {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-queue.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-queue.png");
           background-size: 69px 58px; } }
     /* line 239, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.rewind {
@@ -270,7 +270,7 @@ h3.brand {
         /* line 239, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.rewind {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-rewind.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-rewind.png");
           background-size: 70px 77px; } }
     /* line 243, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.read {
@@ -279,7 +279,7 @@ h3.brand {
         /* line 243, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.read {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-read.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-read.png");
           background-size: 86px 50px; } }
     /* line 247, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.visuals {
@@ -288,7 +288,7 @@ h3.brand {
         /* line 247, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.visuals {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-visuals.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-visuals.png");
           background-size: 80px 66px; } }
     /* line 251, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature dt {

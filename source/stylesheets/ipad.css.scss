@@ -97,7 +97,7 @@ h3.brand {
   height:18px;
   a {
     background:url("http://media.scpr.org/assets/static/images/ipad-landing/1x/logo.png") no-repeat;
-    @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/logo.png",250px, 36px);
+    @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/logo.png",125px, 18px);
     display:block;
     @include hide-text;
     width:125px;
@@ -214,39 +214,39 @@ h3.brand {
     }
     &.breaking {
       background:url('http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-breaking.png') no-repeat center top;
-      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-breaking.png",60px, 68px);
+      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/ico-breaking.png",60px, 68px);
     }
     &.listen-read {
       background:url('http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-listen-read.png') no-repeat center 6px;
-      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-listen-read.png",127px, 58px);
+      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/ico-listen-read.png",127px, 58px);
     }
     &.morning-evening {
       background:url('http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-morning-evening.png') no-repeat center top;
-      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-morning-evening.png",77px, 77px);
+      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/ico-morning-evening.png",77px, 77px);
     }
     &.news {
       background:url('http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-news.png') no-repeat center top;
-      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-news.png",62px, 76px);
+      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/ico-news.png",62px, 76px);
     }
     &.programs {
       background:url('http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-programs.png') no-repeat center top;
-      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-programs.png",35px, 76px);
+      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/ico-programs.png",35px, 76px);
     }
     &.queue {
       background:url('http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-queue.png') no-repeat center top;
-      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-queue.png",69px, 58px);
+      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/ico-queue.png",69px, 58px);
     }
     &.rewind {
       background:url('http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-rewind.png') no-repeat center top;
-      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-rewind.png",70px, 77px);
+      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/ico-rewind.png",70px, 77px);
     }
     &.read {
       background:url('http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-read.png') no-repeat center 14px;
-      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-read.png",86px, 50px);
+      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/ico-read.png",86px, 50px);
     }
     &.visuals {
       background:url('http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-visuals.png') no-repeat center top;
-      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-visuals.png",80px, 66px);
+      @include image-2x("http://media.scpr.org/assets/static/images/ipad-landing/ico-visuals.png",80px, 66px);
     }
     dt {
       color:#00b9f3;
