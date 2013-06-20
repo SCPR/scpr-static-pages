@@ -81,7 +81,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 // Da' Grid
 .bound {
   margin:0 auto;
-  min-width:980px;
+  max-width:980px;
   width:65.2%;
 }
 
@@ -278,4 +278,80 @@ footer {
   a:hover {
     text-decoration:underline;
   };
+}
+
+
+// Media Queries
+@media (max-width:1390px) and (min-width:980px) {
+  .hero {
+    background: url("http://media.scpr.org/assets/static/images/ipad-landing/ipad-hero.jpg") center top no-repeat;
+    background-size:1400px 688px;
+    h1 {
+      @include px-to-ems(font-size, 50);
+      margin-bottom:2em;
+    }
+    .signup-form {
+      label {
+        display:block;
+        margin-bottom:1em;
+      }
+    }
+  }
+}
+@media (max-width:979px) {
+  body {
+    font-size:12px;
+  }
+  .bound {
+    width:85%;
+  }
+  h3.brand {
+    margin:0 auto;
+  }
+  .hero {
+    background: url("http://media.scpr.org/assets/static/images/ipad-landing/ipad-hero.jpg") center top no-repeat;
+    background-size:1180px 580px;
+    h1 {
+      text-shadow:none;
+    }
+    .signup-form {
+      label {
+        display:block;
+        margin-bottom:1em;
+      }
+      input[type=email] {
+        width:50%;
+      }
+    }
+  }
+}
+@media (max-width:768px) {
+  .features {
+    dl.feature {
+      float:none;
+      margin-bottom:4em;
+      margin-right:0;
+      width:100%;
+    }
+  }
+}
+@media (max-width:480px) {
+  .hero {
+    background: url("http://media.scpr.org/assets/static/images/ipad-landing/ipad-hero.jpg") center top no-repeat;
+    background-size:977px 480px;
+    min-height:500px;
+    .teaseline {
+      @include px-to-ems(font-size, 18);
+    }
+    h1 {
+      @include px-to-ems(font-size, 30);
+      margin-bottom:2em;
+    }
+    .signup-form {
+      input[type=email] {
+        margin-bottom:1em;
+        width:80%;
+      }
+    }
+  }
 }

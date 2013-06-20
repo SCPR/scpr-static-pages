@@ -1,0 +1,34 @@
+- content_for(:page_title) do
+  | You're set to be notified: KPCC for iPad
+  
+- content_for(:additional_head) do
+  ==stylesheet_link_tag "http://media.scpr.org/assets/static/stylesheets/ipad.css"
+  link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"
+
+// Page Header
+header.masthead
+  .masthead-inner.bound
+    h3.brand: a href="http://www.scpr.org" title="KPCC" KPCC
+
+// Page Hero
+.hero.billboard
+  figure
+    img src="http://media.scpr.org/assets/static/images/ipad-landing/ipad-hero.jpg" alt="KPCC on the iPad - Coming Soon"
+    figcaption
+      .hero-inner.bound
+        h1 OK, you're all set! <br> We'll email you as soon as KPCC for iPad lands in the App Store.
+        
+// Main Content
+.main
+  aside.features
+    .features-inner.bound
+    
+// Footer
+footer
+  .footer-inner.bound
+    h3.brand: a href="http://www.scpr.org" title="KPCC" KPCC
+    p
+      a href="http://www.scpr.org/terms" Terms & Conditions 
+      span | 
+      a href="http://www.scpr.org/privacy" Privacy 
+      span| © 2013 Southern California Public Radio
