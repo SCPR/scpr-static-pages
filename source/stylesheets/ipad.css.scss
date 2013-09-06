@@ -66,7 +66,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
   border-radius:6px;
   color:#fff;
   display:inline-block;
-  @include px-to-ems(font-size, 18);
+  @include px-to-ems(font-size, 24);
   font-weight:600;
   padding:10px 15px;
   &.blue {
