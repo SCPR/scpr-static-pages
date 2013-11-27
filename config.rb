@@ -51,6 +51,9 @@ activate :livereload
 #   end
 # end
 
+# Set slim-lang output style
+Slim::Engine.set_default_options :pretty => true
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
