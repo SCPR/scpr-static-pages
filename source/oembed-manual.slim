@@ -1,0 +1,36 @@
+- content_for(:page_title) do
+  | KPCC oEmbed Manual
+
+- content_for(:additional_head) do
+  ==stylesheet_link_tag "/stylesheets/oembed.css"
+  link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet" type="text/css"
+
+header.masthead
+  .bound
+    h1 oEmbed Manual
+    p.tagline Step-by-step instructions on finding the oEmbed-friendly URLs for various services, created by KPCC (Southern California Public Radio).
+    hr
+
+.main
+  .bound
+    h2 List of Services
+    p.subhead Select a service above for step-by-step instructions on retrieving the oEmbed-friendly URL for a service.
+    ul.service-list
+      li: a.brightcove href="https://github.com/SCPR/oembed-manual/tree/master/services/brightcove" Brightcove
+      li: a.cover-it-live href="https://github.com/SCPR/oembed-manual/tree/master/services/cover-it-live" Cover It Live
+      li: a.facebook href="https://github.com/SCPR/oembed-manual/tree/master/services/facebook" Facebook
+      li: a.google-fusion href="https://github.com/SCPR/oembed-manual/tree/master/services/google-fusion" Google Fusion
+      li: a.google-maps href="https://github.com/SCPR/oembed-manual/tree/master/services/google-maps" Google Maps
+      li: a.instagram href="https://github.com/SCPR/oembed-manual/tree/master/services/instagram" Instagram
+      li: a.livestream href="https://github.com/SCPR/oembed-manual/tree/master/services/livestream" Livestream
+      li: a.polldaddy href="https://github.com/SCPR/oembed-manual/tree/master/services/polldaddy" PollDaddy
+      li: a.rebelmouse href="https://github.com/SCPR/oembed-manual/tree/master/services/rebelmouse" Rebel Mouse
+      li: a.scribd href="https://github.com/SCPR/oembed-manual/tree/master/services/scribd" Scribd
+      li: a.soundcloud href="https://github.com/SCPR/oembed-manual/tree/master/services/soundcloud" Soundcloud
+      li: a.spotify href="https://github.com/SCPR/oembed-manual/tree/master/services/spotify" Spotify
+      li: a.storify href="https://github.com/SCPR/oembed-manual/tree/master/services/storify" Storify
+      li: a.twitter href="https://github.com/SCPR/oembed-manual/tree/master/services/twitter" Twitter
+      li: a.ustream href="https://github.com/SCPR/oembed-manual/tree/master/services/ustream" uStream
+      li: a.vimeo href="https://github.com/SCPR/oembed-manual/tree/master/services/vimeo" Vimeo
+      li: a.vine href="https://github.com/SCPR/oembed-manual/tree/master/services/vine" Vine
+      li: a.youtube href="https://github.com/SCPR/oembed-manual/tree/master/services/youtube" YouTube
