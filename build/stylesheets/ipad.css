@@ -92,47 +92,49 @@ h3.brand {
 
 /* line 109, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
 .hero {
-  -webkit-box-shadow: inset 0 250px 250px -250px black;
-  box-shadow: inset 0 250px 250px -250px black;
   background: url("http://media.scpr.org/assets/static/images/ipad-landing/ipad-hero.jpg") center top no-repeat fixed;
   background-size: contain;
-  min-height: 580px;
+  min-height: 800px;
   max-height: 928px;
-  padding-top: 1.5em;
+  padding-top: 0.5em;
   position: relative; }
-  /* line 117, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 116, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  .hero.launch {
+    background: url("http://media.scpr.org/assets/static/images/ipad-landing/iPadHero.jpg") center top no-repeat fixed;
+    background-size: contain; }
+  /* line 120, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .hero .teaseline {
-    color: #f37a00;
+    color: #00b9f3;
     font-size: 1.5em;
     font-weight: 600; }
-  /* line 122, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 125, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .hero h1 {
-    color: #fff;
-    font-size: 3.375em;
+    color: #000;
+    font-size: 3.875em;
+    font-weight: 800;
     letter-spacing: -0.03em;
-    margin: 0 0 3em;
-    position: relative;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
-  /* line 130, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    margin: 0 0 4em;
+    position: relative; }
+  /* line 133, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .hero .hero-inner {
     height: 100%;
     position: relative; }
-  /* line 134, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 137, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .hero .signup-form {
-    background: rgba(255, 255, 255, 0.23);
-    border-bottom: 1px solid rgba(207, 207, 207, 0.55);
-    border-top: 1px solid rgba(207, 207, 207, 0.55);
+    background: rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid rgba(207, 207, 207, 0.35);
+    border-top: 1px solid rgba(207, 207, 207, 0.35);
     padding: 32px 10px; }
-    /* line 139, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 142, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero .signup-form label {
       color: #fff;
       font-size: 1.625em;
       font-weight: 500;
       text-shadow: 0 0 8px rgba(0, 0, 0, 0.5); }
-    /* line 145, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 148, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero .signup-form .hidden {
       display: none; }
-    /* line 148, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 151, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero .signup-form input[type=email] {
       border: 0;
       border-radius: 6px;
@@ -144,12 +146,12 @@ h3.brand {
       margin: 0 18px;
       padding: 10px;
       width: 32%; }
-      /* line 158, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+      /* line 161, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
       .hero .signup-form input[type=email]:focus {
         -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         outline: none; }
-    /* line 163, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 166, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero .signup-form input[type=submit] {
       background: #00b9f3;
       border: 0;
@@ -157,23 +159,23 @@ h3.brand {
       color: #fff;
       font-size: 1.375em;
       padding: 10px 18px; }
-      /* line 170, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+      /* line 173, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
       .hero .signup-form input[type=submit]:focus {
         -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         outline: none; }
-  /* line 176, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 179, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .hero figure {
     height: 100%;
     position: relative; }
-    /* line 179, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 182, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero figure img {
       display: none;
       position: relative;
       width: 100%;
       height: auto;
       z-index: -2; }
-    /* line 186, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 189, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero figure figcaption {
       position: absolute;
       width: 100%;
@@ -182,14 +184,14 @@ h3.brand {
       left: 0;
       text-align: center; }
 
-/* line 198, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+/* line 201, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
 .main {
   background: #fff; }
 
-/* line 201, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+/* line 204, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
 .features {
   padding-top: 2em; }
-  /* line 203, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 206, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .features .clearfix {
     *zoom: 1; }
     /* line 18, /Users/sean/.rvm/gems/ruby-1.9.3-p194/gems/bourbon-3.0.1/app/assets/stylesheets/addons/_clearfix.scss */
@@ -199,187 +201,202 @@ h3.brand {
     /* line 23, /Users/sean/.rvm/gems/ruby-1.9.3-p194/gems/bourbon-3.0.1/app/assets/stylesheets/addons/_clearfix.scss */
     .features .clearfix:after {
       clear: both; }
-  /* line 206, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 209, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  .features h2 {
+    color: #000;
+    font-size: 2em;
+    margin: 1em 0 0.5em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase; }
+  /* line 217, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  .features hr {
+    border: 0;
+    background-color: #c3c3c3;
+    height: 1px; }
+  /* line 222, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .features dl.feature {
     float: left;
     margin-right: 3.2%;
     padding-top: 96px;
     text-align: center;
     width: 31.148936%; }
-    /* line 212, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 228, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature:last-child {
       margin-right: 0; }
-    /* line 215, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 231, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.breaking {
       background: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-breaking.png") no-repeat center top; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        /* line 215, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+        /* line 231, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.breaking {
           /* on retina, use image that's scaled by 2 */
           background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-breaking.png");
           background-size: 60px 68px; } }
-    /* line 219, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 235, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.listen-read {
       background: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-listen-read.png") no-repeat center 6px; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        /* line 219, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+        /* line 235, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.listen-read {
           /* on retina, use image that's scaled by 2 */
           background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-listen-read.png");
           background-size: 127px 58px; } }
-    /* line 223, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 239, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.morning-evening {
       background: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-morning-evening.png") no-repeat center top; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        /* line 223, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+        /* line 239, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.morning-evening {
           /* on retina, use image that's scaled by 2 */
           background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-morning-evening.png");
           background-size: 77px 77px; } }
-    /* line 227, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 243, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.news {
       background: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-news.png") no-repeat center top; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        /* line 227, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+        /* line 243, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.news {
           /* on retina, use image that's scaled by 2 */
           background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-news.png");
           background-size: 62px 76px; } }
-    /* line 231, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 247, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.programs {
       background: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-programs.png") no-repeat center top; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        /* line 231, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+        /* line 247, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.programs {
           /* on retina, use image that's scaled by 2 */
           background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-programs.png");
           background-size: 35px 76px; } }
-    /* line 235, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 251, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.queue {
       background: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-queue.png") no-repeat center top; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        /* line 235, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+        /* line 251, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.queue {
           /* on retina, use image that's scaled by 2 */
-          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-queue.png");
+          background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-queue.png");
           background-size: 69px 58px; } }
-    /* line 239, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 255, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.rewind {
       background: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-rewind.png") no-repeat center top; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        /* line 239, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+        /* line 255, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.rewind {
           /* on retina, use image that's scaled by 2 */
           background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-rewind.png");
           background-size: 70px 77px; } }
-    /* line 243, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 259, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.read {
       background: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-read.png") no-repeat center 14px; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        /* line 243, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+        /* line 259, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.read {
           /* on retina, use image that's scaled by 2 */
           background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-read.png");
           background-size: 86px 50px; } }
-    /* line 247, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 263, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature.visuals {
       background: url("http://media.scpr.org/assets/static/images/ipad-landing/1x/ico-visuals.png") no-repeat center top; }
       @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-        /* line 247, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+        /* line 263, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
         .features dl.feature.visuals {
           /* on retina, use image that's scaled by 2 */
           background-image: url("http://media.scpr.org/assets/static/images/ipad-landing/ico-visuals.png");
           background-size: 80px 66px; } }
-    /* line 251, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 267, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature dt {
       color: #00b9f3;
       font-size: 1.5em;
       font-weight: 400;
       margin-bottom: 1em; }
-    /* line 257, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 273, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .features dl.feature dd {
       color: #252525;
       font-size: 1.0625em;
       line-height: 2em;
       margin: 0; }
 
-/* line 267, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+/* line 283, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
 footer {
   margin-top: 10em;
   padding-bottom: 1em;
   text-align: center; }
-  /* line 271, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 287, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   footer h3.brand {
     display: inline-block; }
-  /* line 274, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 290, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   footer p, footer a {
     color: #808080;
     font-size: 0.875em; }
-  /* line 278, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 294, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   footer a:hover {
     text-decoration: underline; }
 
 @media (max-width: 1390px) and (min-width: 980px) {
-  /* line 286, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 302, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .hero {
-    background: url("http://media.scpr.org/assets/static/images/ipad-landing/ipad-hero.jpg") center top no-repeat;
+    background: url("http://media.scpr.org/assets/static/images/ipad-landing/iPadHero.jpg") center top no-repeat;
     background-size: 1400px 688px; }
-    /* line 289, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 305, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero h1 {
       font-size: 3.125em;
       margin-bottom: 2em; }
-    /* line 294, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 310, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero .signup-form label {
       display: block;
       margin-bottom: 1em; } }
 @media (max-width: 979px) {
-  /* line 302, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 318, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   body {
     font-size: 12px; }
 
-  /* line 305, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 321, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .bound {
     width: 85%; }
 
-  /* line 308, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 324, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   h3.brand {
     margin: 0 auto; }
 
-  /* line 311, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
-  .hero {
-    background: url("http://media.scpr.org/assets/static/images/ipad-landing/ipad-hero.jpg") center top no-repeat;
-    background-size: 1180px 580px; }
-    /* line 314, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
-    .hero h1 {
+  /* line 327, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  .hero.launch {
+    background: url("http://media.scpr.org/assets/static/images/ipad-landing/iPadHero.jpg") center top no-repeat;
+    background-size: cover;
+    min-height: 400px; }
+    /* line 331, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    .hero.launch h1 {
+      margin-bottom: 1em;
       text-shadow: none; }
-    /* line 318, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
-    .hero .signup-form label {
+    /* line 336, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    .hero.launch .signup-form label {
       display: block;
       margin-bottom: 1em; }
-    /* line 322, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
-    .hero .signup-form input[type=email] {
+    /* line 340, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    .hero.launch .signup-form input[type=email] {
       width: 50%; } }
-@media (max-width: 768px) {
-  /* line 330, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+@media (max-width: 767px) {
+  /* line 348, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .features dl.feature {
     float: none;
     margin-bottom: 4em;
     margin-right: 0;
     width: 100%; } }
 @media (max-width: 480px) {
-  /* line 339, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+  /* line 357, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
   .hero {
     background: url("http://media.scpr.org/assets/static/images/ipad-landing/ipad-hero.jpg") center top no-repeat;
     background-size: 977px 480px;
     min-height: 500px; }
-    /* line 343, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 361, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero .teaseline {
       font-size: 1.125em; }
-    /* line 346, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 364, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero h1 {
       font-size: 1.875em;
       margin-bottom: 2em; }
-    /* line 351, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
+    /* line 369, /Users/sean/Sites/scpr-static-pages/source/stylesheets/ipad.css.scss */
     .hero .signup-form input[type=email] {
       margin-bottom: 1em;
       width: 80%; } }
