@@ -3,8 +3,8 @@
 source 'http://rubygems.org'
 
 gem "rack"
-gem "middleman", "~>3.0.13"
-gem "middleman-livereload"
+gem "middleman", "~>3.2.0"
+gem "middleman-livereload", "~> 3.1.0"
 gem "middleman-bourbon"
 gem "middleman-smusher"
 gem "slim"
