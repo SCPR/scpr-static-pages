@@ -7,7 +7,9 @@ html
     meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     ==stylesheet_link_tag "normalize"
     
-    script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"
+    | <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+    | <![endif]-->
     == yield_content(:additional_head)
   body
     == yield

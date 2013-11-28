@@ -1,3 +1,45 @@
+// VARIABLES
+// Colors
+$white:#fff;
+$black:#000;
+$grayLight:#B5BEC0;
+$grayMed:#7F878C;
+$accentPrimary:#08B9F3;
+
+
+
 body {
   font-family:"freight-sans-pro", "Avenir Next," Helvatica, "Droid Sans", sans-serif; 
+}
+
+// Text Styles 
+h1 {
+  color:$black;
+  font-size:4.5em
+}
+h2 {
+  color:$accentPrimary;
+  font-size:3.875em;
+  font-weight:300;
+  line-height:1.129032258em;
+}
+h3 {
+  color:$grayMed;
+  font-size:1.875em;
+  font-weight:300;
+  line-height:1.266666667em;
+}
+h4 {
+  font-size:2.5em;
+  line-height:1.05em;
+}
+p {
+  &.tagline {
+    font-size:3em;
+    font-weight:300;
+  }
+  &.fineprint {
+    color:$grayLight;
+    font-size:0.75em;
+  }
 }
