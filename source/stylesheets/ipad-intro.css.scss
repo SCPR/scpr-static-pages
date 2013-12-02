@@ -20,8 +20,9 @@ body {
 
 // Text Styles 
 h1 {
-  color:$black;
-  font-size:4.5em
+  color:$white;
+  font-size:4.5em;
+  margin:0.3em 0 0;
 }
 h2 {
   color:$accentPrimary;
@@ -44,9 +45,10 @@ p {
   color:$white;
   font-size:1.25em;
   &.tagline {
-    color:$black;
+    color:$white;
     font-size:3em;
     font-weight:300;
+    margin-top:0.3em;
   }
   &.fineprint {
     color:$grayLight;
@@ -116,9 +118,25 @@ p {
 
 // Page Hero
 .hero {
-  background:$grayLight;
+  background:$grayLight url('../images/ipad-intro/bg-hero.jpg') fixed no-repeat center top;
+  background-size:cover;
   border-top:4em solid $grayDark;
+  position:relative;
   text-align:center;
+  &:before {
+    content:"";
+    background:rgba(0,0,0,0.2);
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:10;
+  }
+  h1, p {
+    position:relative;
+    z-index:50;
+  }
 }
 
 // Content Sections
@@ -130,7 +148,7 @@ p {
 }
 
 .feature-area {
-  padding-top:4em;
+  // padding-top:4em;
 }
   .feature-intro {
     background:$white;
@@ -141,6 +159,7 @@ p {
       content:"";
       display:block;
       position:absolute;
+      z-index:100;
       margin-left:-32px;
       left:50%;
       top:-32px;
