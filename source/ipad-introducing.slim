@@ -13,7 +13,7 @@ section.hero
   .bound
     h1 Meet KPCC for iPad.
     p.tagline Intelligent news. At your convenience.
-    img src="images/ipad-intro/img-hero.png" alt="KPCC for iPad screenshot"
+    // img src="images/ipad-intro/img-hero.png" alt="KPCC for iPad screenshot"
 
 // Let's give people a way to get around
 header.wayfinding
@@ -100,8 +100,8 @@ main
   section#comprehensive-news.feature-area
     header.feature-intro
       .bound
-        h2 Comprehensive news for Southern California
-        h3 KPCC is more than just radio– we're news for all of Southern California. 
+        h2 We've got you covered.
+        h3 KPCC is more than just radio– we're comprehensive news for all of Southern California. 
     figure.single-feature.cn-notifications
       img src="images/ipad-intro/product-vizualized-notifications.png"
       figcaption
@@ -128,3 +128,6 @@ footer
       a href="http://www.scpr.org/privacy" Privacy 
       span | 
       | © 2013 Southern California Public Radio
+
+- content_for(:additional_foot) do
+  script src="javascripts/ipad.js" type="text/javascript"
