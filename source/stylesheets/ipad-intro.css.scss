@@ -14,8 +14,8 @@ $accentPrimary:#08B9F3;
 
 
 body {
-  background:$grayLight;
-  font-family:"freight-sans-pro", "Avenir Next," Helvatica, "Droid Sans", sans-serif; 
+  background:$grayMed;
+  font-family:"freight-sans-pro", "Avenir Next," Helvetica, "Droid Sans", sans-serif; 
 }
 
 // Text Styles 
@@ -43,7 +43,7 @@ h4 {
 }
 p {
   color:$white;
-  font-size:1.25em;
+  font-size:1.5em;
   &.tagline {
     color:$white;
     font-size:3em;
@@ -59,8 +59,10 @@ p {
 // Containers and the Grid
 .bound {
   margin:0 auto;
+  min-width:48em;
   max-width:58.75em;
   width:85%;
+  @include clearfix();
 }
 
 // Sticky Header
@@ -146,9 +148,22 @@ p {
 #radio-visualized .feature-intro:before {
   background:url('../images/ipad-intro/badge-visuals.png') no-repeat 0 0;
 }
+#great-listening .feature-intro:before {
+  background:url('../images/ipad-intro/badge-listening.png') no-repeat 0 0;
+}
+#comprehensive-news .feature-intro:before {
+  background:url('../images/ipad-intro/badge-news.png') no-repeat 0 0;
+}
 
 .feature-area {
-  // padding-top:4em;
+  position:relative;
+  .bg {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+  }
 }
   .feature-intro {
     background:$white;
@@ -168,5 +183,66 @@ p {
     }
   }
   .single-feature {
-    @extend .bound;
+    @include clearfix();
+    padding:4em 0 8em;
+    .img-wrap {
+      display:block;
+      float:right;
+      margin-left:2em;
+      position:relative;
+      &:before {
+        content:"";
+        background:url('../images/ipad-intro/element-ipad-chrome.png') no-repeat 0 0;
+        display:block;
+        position:absolute;
+        width:514px;
+        height:720px;
+        left:0;
+        top:0;
+        z-index:19;
+      }
+      img {
+        display:block;
+        padding:70px 0 0 41px;
+        position:relative;
+        z-index:20;
+      }
+    }
+    figcaption {
+      position:relative;
+      text-align:right;
+      z-index:30;
+    }
   }
+    #short-list .bg {
+      background:url('../images/ipad-intro/bg-sl-handpicked.jpg') fixed no-repeat center top;
+    }
+    #radio-visualized .bg {
+      background:url('../images/ipad-intro/bg-viz-programs.jpg') fixed no-repeat center top; 
+    }
+    #great-listening .bg {
+      background:url('../images/ipad-intro/bg-gl-programs.jpg') fixed no-repeat center top;
+    }
+    #comprehensive-news .bg {
+      background:url('../images/ipad-intro/bg-cn-coverage.jpg') fixed no-repeat center top;
+    }
+
+.app-store {
+  background:$accentPrimary;
+  padding:6em 0;
+  text-align:center;
+  h1, p.tagline {
+    color:$white;
+  }
+}
+
+footer {
+  background:$white;
+  a {
+    color:$grayMed;
+    text-decoration:none;
+    &:hover {
+      color:$grayDark;
+    }
+  }
+}
