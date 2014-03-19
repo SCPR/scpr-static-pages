@@ -1,0 +1,18 @@
+- state ||= 'active'
+
+article class="matchup #{state}"
+  - if state == 'active'
+    .inner
+      .show.first.bullseye
+        h2 Bullseye
+        .overlay
+      .or or
+      .show.second.dinner-party
+        h2 The Dinner Party
+        .overlay
+      .poll
+        script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7860907.js"
+        noscript
+          a href="http://polldaddy.com/poll/7860907/"The Dinner Party or Bullseye?
+  - else
+    h3 TBD

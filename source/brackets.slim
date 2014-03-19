@@ -1,0 +1,159 @@
+- content_for(:page_title) do
+  | 2014 Public Radio Bracket Madness - 89.3 KPCC
+  
+- content_for(:additional_head) do
+  meta name="description" content="KPCC's series on the science, options, and dilemma of dual language education."
+  meta name="keywords" content="public radio, march madness, radiolab, this american life, wait wait... don't tell me, weekend edition, snap judgement, marketplace, fresh air, take two, airtalk, southern california public radio, kpcc"
+  meta name="author" content="89.3 KPCC"
+
+  /! Facebook Metadata
+  meta property="og:site_name" content="2014 Public Radio Bracket Madness"
+  meta property="article:publisher" content="https://www.facebook.com/kpcc"
+  meta property="og:title" content="2014 Public Radio Bracket Madness | 89.3 KPCC"
+  meta property="og:url" content="http://projects.scpr.org/static/marchmadness"
+  meta property="og:type" content="article"
+  meta property="og:image" content="http://projects.scpr.org/static/marchmadness/images/brackets/brackets_opengraph.jpg"
+  meta property="og:description" content="It's March, which means it's time for KPCC's Public Radio Bracket Madness, a chance for public radio shows across the nation to fight it out."
+
+  /! Twitter Metadata
+  meta name="twitter:card" content="summary"
+  meta name="twitter:domain" content="http://projects.scpr.org/"
+  meta name="twitter:site" content="KPCC"
+  meta name="twitter:image:src" content="http://projects.scpr.org/static/marchmadness/images/brackets/brackets_opengraph.jpg"
+  meta name="twitter:description" content="It's March, which means it's time for KPCC's Public Radio Bracket Madness, a chance for public radio shows across the nation to fight it out."
+  meta name="twitter:title" content="2014 Public Radio Bracket Madness"
+  meta name="twitter:url" content="http://projects.scpr.org/static/marchmadness"
+
+  ==stylesheet_link_tag "/stylesheets/brackets.css"
+
+  /! Load Web Fonts
+  link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic" rel="stylesheet" type="text/css"
+  script type="text/javascript" src="//use.typekit.net/vtu6xsq.js"
+  javascript:
+    try{Typekit.load();}catch(e){}
+
+header.hero
+  .bound
+    .credits
+      h3.brand: a href="http://scpr.org" title="KPCC" 89.3 KPCC
+      p Presents the 2nd Annual
+    .titling
+      h1
+        | Public Radio 
+        b.bracket: span Bracket
+        em Madness
+      p.explainer It's March, which means it's time for KPCC's second annual Public Radio Bracket Madness — the bracket poll in which we ask you to pick your favorite public radio shows!
+  figure.hero-photo
+    img src="http://a.scpr.org/i/6fd86959d19feffd8d25ebb6a7d63b76/58298-eight.jpg"
+    figcaption
+      p Ira Glass hoists the 2013 Bracket Madness trophy on behalf of This American Life.
+  .tease
+    p: a.button href="#main" Cast your vote now!
+  .download
+    p: a href="images/brackets/PublicRadioBracket2014.pdf" Download Brackets (PDF)
+  .sharing
+    ul
+      li.label Share this:
+      li: a.facebook href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprojects.scpr.org%2Fstatic%2Fmarchmadness%2F" onClick="return fbs_click()" target="_blank" title="Share This on Facebook" Facebook
+      li: a.twitter href="http://twitter.com/share?text=2014 Public Radio Bracket Madness&url=http%3A%2F%2Fprojects.scpr.org%2Fstatic%2Fmarchmadness%2F" Twitter
+main#main
+  .intro
+    .bound
+      .email-signup
+        /! Begin MailChimp Signup Form
+        form#mc-embedded-subscribe-form.validate action="http://scpr.us2.list-manage.com/subscribe/post?u=5e1e4451f92ffc0fa746da7fa&amp;id=1f2131ce65" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank" 
+          input name="EMAIL" placeholder="Sign up to get notified for each round of voting!" required="true" type="email" value="" 
+          input name="subscribe" type="submit" value="Submit" /
+          div style=("position: absolute; left: -5000px;") 
+            input name="b_5e1e4451f92ffc0fa746da7fa_1f2131ce65" type="text" value="" /
+      h4.current-round
+        | Current Round : 
+        strong Round 1
+  == partial "bracket-west"
+  == partial "bracket-central"
+  == partial "bracket-upper-ne"
+  == partial "bracket-lower-ne"
+
+footer#footer
+  .bound
+    h3.brand: a href="http://www.scpr.org" title="KPCC" KPCC
+    p
+      a href="http://www.scpr.org/terms" Terms & Conditions 
+      span | 
+      a href="http://www.scpr.org/privacy" Privacy 
+      span| © #{Time.now.year} Southern California Public Radio
+
+- content_for(:additional_foot) do
+
+  /! Stats: WebTrends
+  script src="http://media.scpr.org/assets/scripts/webtrends.v2.js"
+  javascript:
+    //<![CDATA[
+        var _tag=new WebTrends();
+        _tag.dcsGetId();
+    //]]>
+  javascript:
+    //<![CDATA[
+        _tag.dcsCustom=function(){
+            // Add custom parameters here.
+            //_tag.DCSext.param_name=param_value;
+        }
+    _tag.dcsCollect();
+    //]]>
+  noscript
+    div
+      img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://statse.webtrendslive.com/dcsyqctzwuz5bdsebpmwhwe8w_2p8d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.3.0&amp;WT.dcssip=www.scpr.org"
+  /! /WebTrends
+
+  /! BEGIN Comscore
+  javascript:
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "6035974", c3: "", c4: "" });
+    (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+    })();
+  noscript
+    img src="http://b.scorecardresearch.com/p?c1=2&c2=6035974&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1"
+  /! /Comscore
+
+  /! begin chartbeat
+  javascript:
+    var _sf_async_config = { uid: 33583, domain: 'projects.scpr.org', useCanonical:true };
+    (function() {
+        function loadChartbeat() {
+            window._sf_endpt = (new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js');
+            document.body.appendChild(e);
+        };
+        var oldonload = window.onload;
+        window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+  /! end chartbeat
+
+  /! begin google analytics
+  javascript:
+    var hostName = 'projects.scpr.org';
+    var _gaq = _gaq || [];
+    _gaq.push(
+        ['_setAccount', 'UA-624724-1'],
+        ['_setDomainName', hostName],
+        ['_setCustomVar', 6, 'Station', 'Southern California Public Radio', 2],
+        ['_setCustomVar', 7, 'PageType', 'Story', 3],
+        ['_trackPageview'],
+        ['b._setAccount', 'UA-18188937-11'],
+        ['b._setDomainName', hostName],
+        ['b._setCustomVar', 6, 'Station', 'Southern California Public Radio', 2],
+        ['b._setCustomVar', 7, 'PageType', 'Story', 3],
+        ['b._trackPageview']
+    );
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  /! end google analytics

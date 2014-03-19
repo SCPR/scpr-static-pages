@@ -1,0 +1,80 @@
+- region ||= 'Lower Northeast'
+
+section.region
+  header
+    .bound
+      h3= region
+  .bracket
+    .round.round-one.current-round
+      h5 Round 1
+      /! Matchup - Fresh Air vs. Tell Me More
+      article class="matchup active"
+        span.close Close
+        .inner
+          .show.first.fresh-air
+            h2 Fresh Air
+            .overlay
+          .or or
+          .show.second.tell-me-more
+            h2 Tell Me More
+            .overlay
+          .poll
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7862720.js"
+            noscript
+              a href="http://polldaddy.com/poll/7862720/" Fresh Air or Tell Me More?
+      /! Matchup - Planet Money vs. Latino USA
+      article class="matchup active"
+        span.close Close
+        .inner
+          .show.first.planet-money
+            h2 Planet Money
+            .overlay
+          .or or
+          .show.second.latino-usa
+            h2 Latino USA
+            .overlay
+          .poll
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7862733.js"
+            noscript
+              a href="http://polldaddy.com/poll/7862733/" Planet Money or Latino USA?
+    .round.round-one.right.current-round
+      h5 Round 1
+      /! Matchup - TED Radio Hour vs. Weekend Edition Saturday
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.ted
+            h2 TED Radio Hour
+            .overlay
+          .or or
+          .show.second.weekend-edition
+            h2 Weekend Edition Saturday
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7862741.js" type="text/javascript" 
+            noscript
+              a href="http://polldaddy.com/poll/7862741/"  TED Radio Hour or Weekend Edition Saturday?
+      /! Matchup - Kojo Nnamdi vs. State of Things
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.state-of-things
+            h2 State of Things
+            .overlay
+          .or or
+          .show.second.kojo-nnamdi
+            h2 The Kojo Nnamdi Show
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7862750.js" type="text/javascript" 
+            noscript
+              a href="http://polldaddy.com/poll/7862750/" Kojo Nnamdi or State of Things?
+    .round.round-two
+      h5 Round 2
+      == partial(:matchup, :locals => { :state => 'inactive' })
+    .round.round-two.right
+      h5 Round 2
+      == partial(:matchup, :locals => { :state => 'inactive' })
+    .round.regional-final
+      h5 Regional Final
+      == partial(:matchup, :locals => { :state => 'inactive' })

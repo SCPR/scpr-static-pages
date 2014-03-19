@@ -1,0 +1,80 @@
+- region ||= 'Central'
+
+section.region
+  header
+    .bound
+      h3= region
+  .bracket
+    .round.round-one.current-round
+      h5 Round 1
+      /! Matchup - Wait Wait vs. Wits
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.wait-wait
+            h2 Wait Wait... Don't Tell Me!
+            .overlay
+          .or or
+          .show.second.wits
+            h2 Wits
+            .overlay
+          .poll
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7862264.js"
+            noscript
+              a href="http://polldaddy.com/poll/7862264/" Wait Wait or Wits?
+      /! Matchup - Daily Circuit vs. Afternoon Shift 
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.daily-circuit
+            h2 The Daily Circuit
+            .overlay
+          .or or
+          .show.second.afternoon-shift
+            h2 The Afternoon Shift
+            .overlay
+          .poll
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7862292.js"
+            noscript
+              a href="http://polldaddy.com/poll/7862292/" Daily Circuit or Afternoon Shift?
+    .round.round-one.right.current-round
+      h5 Round 1
+      /! Matchup - Q with Jian Ghomeshi vs. WireTap
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.q
+            h2 Q with Jian Ghomeshi
+            .overlay
+          .or or
+          .show.second.wiretap
+            h2 WireTap
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7862320.js" type="text/javascript" 
+            noscript
+              a href="http://polldaddy.com/poll/7862320/" Q with Jian Ghomeshi or WireTap?
+      /! Matchup - Marketplace vs. Splendid Table
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.marketplace
+            h2 Marketplace
+            .overlay
+          .or or
+          .show.second.splendid-table
+            h2 The Splendid Table
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7862328.js" type="text/javascript" 
+            noscript
+              a href="http://polldaddy.com/poll/7862328/"  Marketplace or Splendid Table?
+    .round.round-two
+      h5 Round 2
+      == partial(:matchup, :locals => { :state => 'inactive' })
+    .round.round-two.right
+      h5 Round 2
+      == partial(:matchup, :locals => { :state => 'inactive' })
+    .round.regional-final
+      h5 Regional Final
+      == partial(:matchup, :locals => { :state => 'inactive' })

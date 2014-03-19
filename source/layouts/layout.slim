@@ -7,9 +7,7 @@ html
     meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     link href="http://media.scpr.org/favicon.ico" rel="shortcut icon" type="image/x-icon"
     
-    | <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
-    | <![endif]-->
+    ==javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"
 
     ==stylesheet_link_tag "normalize"
     == yield_content(:additional_head)
@@ -22,7 +20,7 @@ html
       window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.9.1.min.js"><\/script>')
 
     //Load site JS
-    ==javascript_include_tag "all"
+    ==javascript_include_tag "brackets"
 
     //Load page-specific JS
     == yield_content(:additional_foot)

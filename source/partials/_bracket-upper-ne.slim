@@ -1,0 +1,80 @@
+- region ||= 'Upper Northeast'
+
+section.region
+  header
+    .bound
+      h3= region
+  .bracket
+    .round.round-one.current-round
+      h5 Round 1
+      /! Matchup - Radiolab vs. Thew Moth
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.radiolab
+            h2 Radiolab
+            .overlay
+          .or or
+          .show.second.moth
+            h2 The Moth Radio Hour
+            .overlay
+          .poll
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7862676.js"
+            noscript
+              a href="http://polldaddy.com/poll/7862676/" Radiolab The Moth?
+      /! Matchup - On the Media vs. Radio Boston
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.on-the-media
+            h2 On the Media
+            .overlay
+          .or or
+          .show.second.radio-boston
+            h2 Radio Boston
+            .overlay
+          .poll
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7862682.js"
+            noscript
+              a href="http://polldaddy.com/poll/7862682/" On the Media or Radio Boston?
+    .round.round-one.right.current-round
+      h5 Round 1
+      /! Matchup - Studio 360 vs. Ask Me Another
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.studio-threesixty
+            h2 Studio 360
+            .overlay
+          .or or
+          .show.second.ask-me-another
+            h2 Ask Me Another
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7862695.js" type="text/javascript" 
+            noscript
+              a href="http://polldaddy.com/poll/7862695/" Studio 360 or Ask Me Another?
+      /! Matchup - The Brian Lehrer Show vs. Only A Game
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.brian-lehrer
+            h2 The Brian Lehrer Show
+            .overlay
+          .or or
+          .show.second.only-a-game
+            h2 Only A Game
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7862704.js" type="text/javascript" 
+            noscript
+              a href="http://polldaddy.com/poll/7862704/"  The Brian Lehrer Show or Only A Game?
+    .round.round-two
+      h5 Round 2
+      == partial(:matchup, :locals => { :state => 'inactive' })
+    .round.round-two.right
+      h5 Round 2
+      == partial(:matchup, :locals => { :state => 'inactive' })
+    .round.regional-final
+      h5 Regional Final
+      == partial(:matchup, :locals => { :state => 'inactive' })
