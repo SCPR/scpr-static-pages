@@ -5,28 +5,24 @@ section.region
     .bound
       h3= region
   .bracket
-    .round.round-one.current-round
+    .round.round-one
       h5 Round 1
       /! Matchup - Airtalk vs. 99% Invisible
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
-          .show.first.ninety-nine
+          .show.first.ninety-nine.winner
             h2 99% Invisible
             .overlay
           .or or
           .show.second.airtalk
             h2 AirTalk
             .overlay
-          .poll
-            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7860835.js"
-            noscript
-              a href="http://polldaddy.com/poll/7860835/" AirTalk or 99% Invisible ?
       /! Matchup - Snap Judgement vs. Take Two
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
-          .show.first.snap-judgement
+          .show.first.snap-judgement.winner
             h2 Snap Judgment
             .overlay
           .or or
@@ -34,31 +30,25 @@ section.region
             h2 Take Two
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7860862.js" type="text/javascript" 
-            noscript
-              a href="http://polldaddy.com/poll/7860862/"  Snap Judgment or Take Two?
-    .round.round-one.right.current-round
+    .round.round-one.right
       h5 Round 1
       /! Matchup - Press Play vs. Live Wire
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
           .show.first.press-play
             h2 Press Play
             .overlay
           .or or
-          .show.second.live-wire
+          .show.second.live-wire.winner
             h2 Live Wire
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7860898.js" type="text/javascript" 
-            noscript
-              a href="http://polldaddy.com/poll/7860898/" Press Play or Live Wire?
       /! Matchup - Dinner Party vs. Bullseye 
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
-          .show.first.dinner-party
+          .show.first.dinner-party.winner
             h2 The Dinner Party Download
             .overlay
           .or or
@@ -66,15 +56,38 @@ section.region
             h2 Bullseye
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7860907.js" type="text/javascript" 
+    .round.round-two.current-round
+      h5 Round 2
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.ninety-nine
+            h2 99% Invisible
+            .overlay
+          .or or
+          .show.second.snap-judgement
+            h2 Snap Judgment
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7895119.js" type="text/javascript" 
             noscript
-              a href="http://polldaddy.com/poll/7860907/"  The Dinner Party Download or Bullseye?
-    .round.round-two
+              a href="http://polldaddy.com/poll/7895119/"  99% Invisible or Snap Judgement?
+    .round.round-two.right.current-round
       h5 Round 2
-      == partial(:matchup, :locals => { :state => 'inactive' })
-    .round.round-two.right
-      h5 Round 2
-      == partial(:matchup, :locals => { :state => 'inactive' })
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.live-wire
+            h2 Live Wire
+            .overlay
+          .or or
+          .show.second.dinner-party
+            h2 The Dinner Party Download!
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7895127.js" type="text/javascript" 
+            noscript
+              a href="http://polldaddy.com/poll/7895127/"  Live Wire or the Dinner Party Download?
     .round.regional-final
       h5 Regional Final
       == partial(:matchup, :locals => { :state => 'inactive' })

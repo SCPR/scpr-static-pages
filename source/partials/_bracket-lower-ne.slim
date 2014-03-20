@@ -5,13 +5,13 @@ section.region
     .bound
       h3= region
   .bracket
-    .round.round-one.current-round
+    .round.round-one
       h5 Round 1
       /! Matchup - Fresh Air vs. Tell Me More
-      article class="matchup active"
+      article class="matchup final"
         span.close Close
         .inner
-          .show.first.fresh-air
+          .show.first.fresh-air.winner
             h2 Fresh Air
             .overlay
           .or or
@@ -19,14 +19,11 @@ section.region
             h2 Tell Me More
             .overlay
           .poll
-            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7862720.js"
-            noscript
-              a href="http://polldaddy.com/poll/7862720/" Fresh Air or Tell Me More?
       /! Matchup - Planet Money vs. Latino USA
-      article class="matchup active"
+      article class="matchup final"
         span.close Close
         .inner
-          .show.first.planet-money
+          .show.first.planet-money.winner
             h2 Planet Money
             .overlay
           .or or
@@ -34,31 +31,25 @@ section.region
             h2 Latino USA
             .overlay
           .poll
-            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7862733.js"
-            noscript
-              a href="http://polldaddy.com/poll/7862733/" Planet Money or Latino USA?
-    .round.round-one.right.current-round
+    .round.round-one.right
       h5 Round 1
       /! Matchup - TED Radio Hour vs. Weekend Edition Saturday
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
           .show.first.ted
             h2 TED Radio Hour
             .overlay
           .or or
-          .show.second.weekend-edition
+          .show.second.weekend-edition.winner
             h2 Weekend Edition Saturday
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7862741.js" type="text/javascript" 
-            noscript
-              a href="http://polldaddy.com/poll/7862741/"  TED Radio Hour or Weekend Edition Saturday?
       /! Matchup - Kojo Nnamdi vs. State of Things
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
-          .show.first.state-of-things
+          .show.first.state-of-things.winner
             h2 State of Things
             .overlay
           .or or
@@ -66,15 +57,40 @@ section.region
             h2 The Kojo Nnamdi Show
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7862750.js" type="text/javascript" 
+    .round.round-two.current-round
+      h5 Round 2
+      /! Matchup - Fresh Air vs. Planet Money
+      article class="matchup active"
+        span.close Close
+        .inner
+          .show.first.fresh-air
+            h2 Fresh Air
+            .overlay
+          .or or
+          .show.second.planet-money
+            h2 Planet Money
+            .overlay
+          .poll
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7895168.js"
             noscript
-              a href="http://polldaddy.com/poll/7862750/" Kojo Nnamdi or State of Things?
-    .round.round-two
+              a href="http://polldaddy.com/poll/7895168/" Fresh Air or Planet Money?
+    .round.round-two.right.current-round
       h5 Round 2
-      == partial(:matchup, :locals => { :state => 'inactive' })
-    .round.round-two.right
-      h5 Round 2
-      == partial(:matchup, :locals => { :state => 'inactive' })
+      /! Matchup - Weekend Edition Saturday vs. State of Things
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.weekend-edition
+            h2 Weekend Edition Saturday
+            .overlay
+          .or or
+          .show.second.state-of-things
+            h2 State of Things
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7895172.js" type="text/javascript" 
+            noscript
+              a href="http://polldaddy.com/poll/7895172/" Weekend Edition Saturday or State of Things?
     .round.regional-final
       h5 Regional Final
       == partial(:matchup, :locals => { :state => 'inactive' })
