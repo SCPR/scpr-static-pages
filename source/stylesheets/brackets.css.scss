@@ -755,6 +755,28 @@ h3.brand {
   .matchup {
     height:220px;
     margin-top:116px;
+    &.focus {
+      .show {
+        &.first {
+          top:-100px;
+        }
+        &.second {
+          bottom:-100px;
+        }
+      }
+    }
+    .show {
+      height:110px;
+    }
+    .or {
+      top:95px;
+    }
+    .poll {
+      background:#fff;
+      .pds-box {
+        height:220px;
+      }
+    }
   }
 }
 
@@ -840,7 +862,7 @@ footer {
       margin-top:1em;
     }
     &.right {
-      .matchup {
+      .matchup:not(.active) {
         display:none;
       }
     }

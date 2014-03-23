@@ -57,13 +57,13 @@ section.region
             h2 The Kojo Nnamdi Show
             .overlay
           .poll
-    .round.round-two.current-round
+    .round.round-two
       h5 Round 2
       /! Matchup - Fresh Air vs. Planet Money
-      article class="matchup active"
+      article class="matchup final"
         span.close Close
         .inner
-          .show.first.fresh-air
+          .show.first.fresh-air.winner
             h2 Fresh Air
             .overlay
           .or or
@@ -71,16 +71,13 @@ section.region
             h2 Planet Money
             .overlay
           .poll
-            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7895168.js"
-            noscript
-              a href="http://polldaddy.com/poll/7895168/" Fresh Air or Planet Money?
-    .round.round-two.right.current-round
+    .round.round-two.right
       h5 Round 2
       /! Matchup - Weekend Edition Saturday vs. State of Things
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
-          .show.first.weekend-edition
+          .show.first.weekend-edition.winner
             h2 Weekend Edition Saturday
             .overlay
           .or or
@@ -88,9 +85,20 @@ section.region
             h2 State of Things
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7895172.js" type="text/javascript" 
-            noscript
-              a href="http://polldaddy.com/poll/7895172/" Weekend Edition Saturday or State of Things?
-    .round.regional-final
+    .round.regional-final.current-round
       h5 Regional Final
-      == partial(:matchup, :locals => { :state => 'inactive' })
+      /! Matchup - Fresh Air vs. Weekend Edition Saturday
+      article class="matchup active"
+        span.close Close
+        .inner
+          .show.first.fresh-air
+            h2 Fresh Air
+            .overlay
+          .or or
+          .show.second.weekend-edition
+            h2 Weekend Edition
+            .overlay
+          .poll
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7903748.js"
+            noscript
+              a href="http://polldaddy.com/poll/7903748/" Fresh Air or Weekend Edition Saturday?

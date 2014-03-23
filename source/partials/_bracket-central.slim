@@ -57,13 +57,13 @@ section.region
             h2 The Splendid Table
             .overlay
           .poll
-    .round.round-two.current-round
+    .round.round-two
       h5 Round 2
       /! Matchup - Wait Wait vs. Afternoon Shift
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
-          .show.first.wait-wait
+          .show.first.wait-wait.winner
             h2 Wait Wait... Don't Tell Me!
             .overlay
           .or or
@@ -71,26 +71,34 @@ section.region
             h2 The Afternoon Shift
             .overlay
           .poll
-            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7895136.js"
-            noscript
-              a href="http://polldaddy.com/poll/7895136/" Wait Wait or Afternoon Shift?
-    .round.round-two.right.current-round
+    .round.round-two.right
       h5 Round 2
       /! Matchup - WireTap vs. Marketplace
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
           .show.first.wiretap
             h2 Wiretap
             .overlay
           .or or
+          .show.second.marketplace.winner
+            h2 Marketplace
+            .overlay
+          .poll
+    .round.regional-final.current-round
+      h5 Regional Final
+      /! Matchup - Wait Wait vs. Marketplace
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.wait-wait
+            h2 Wait Wait... Don't Tell Me!
+            .overlay
+          .or or
           .show.second.marketplace
             h2 Marketplace
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7895155.js" type="text/javascript" 
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7903746.js"
             noscript
-              a href="http://polldaddy.com/poll/7895155/" WireTap or Marketplace?
-    .round.regional-final
-      h5 Regional Final
-      == partial(:matchup, :locals => { :state => 'inactive' })
+              a href="http://polldaddy.com/poll/7903746/" Wait Wait or Marketplace?

@@ -57,13 +57,13 @@ section.region
             h2 Only A Game
             .overlay
           .poll
-    .round.round-two.current-round
+    .round.round-two
       h5 Round 2
       /! Matchup - Radiolab vs. On the Media
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
-          .show.first.radiolab
+          .show.first.radiolab.winner
             h2 Radiolab
             .overlay
           .or or
@@ -71,16 +71,13 @@ section.region
             h2 On the Media
             .overlay
           .poll
-            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7895159.js"
-            noscript
-              a href="http://polldaddy.com/poll/7895159/" Radiolab or On the Media?
-    .round.round-two.right.current-round
+    .round.round-two.right
       h5 Round 2
       /! Matchup - Studio 360 vs. Brian Lehrer
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
-          .show.first.studio-threesixty
+          .show.first.studio-threesixty.winner
             h2 Studio 360
             .overlay
           .or or
@@ -88,9 +85,20 @@ section.region
             h2 The Brian Lehrer Show
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7895164.js" type="text/javascript" 
-            noscript
-              a href="http://polldaddy.com/poll/7895164/" Studio 360 or The Brian Lehrer Show?
-    .round.regional-final
+    .round.regional-final.current-round
       h5 Regional Final
-      == partial(:matchup, :locals => { :state => 'inactive' })
+      /! Matchup - Radiolab vs. Studio 360
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.radiolab
+            h2 Radiolab
+            .overlay
+          .or or
+          .show.second.studio-threesixty
+            h2 Studio 360
+            .overlay
+          .poll
+            script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7903747.js"
+            noscript
+              a href="http://polldaddy.com/poll/7903747/" Radiolab or Studio 360?

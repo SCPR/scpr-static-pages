@@ -56,12 +56,12 @@ section.region
             h2 Bullseye
             .overlay
           .poll
-    .round.round-two.current-round
+    .round.round-two
       h5 Round 2
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
-          .show.first.ninety-nine
+          .show.first.ninety-nine.winner
             h2 99% Invisible
             .overlay
           .or or
@@ -69,25 +69,32 @@ section.region
             h2 Snap Judgment
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7895119.js" type="text/javascript" 
-            noscript
-              a href="http://polldaddy.com/poll/7895119/"  99% Invisible or Snap Judgement?
-    .round.round-two.right.current-round
+    .round.round-two.right
       h5 Round 2
-      article class="matchup active"
+      article class="matchup final"
         .inner
           span.close Close
           .show.first.live-wire
             h2 Live Wire
             .overlay
           .or or
-          .show.second.dinner-party
-            h2 The Dinner Party Download!
+          .show.second.dinner-party.winner
+            h2 The Dinner Party Download
             .overlay
           .poll
-            script charset="utf-8" src="http://static.polldaddy.com/p/7895127.js" type="text/javascript" 
-            noscript
-              a href="http://polldaddy.com/poll/7895127/"  Live Wire or the Dinner Party Download?
-    .round.regional-final
+    .round.regional-final.current-round
       h5 Regional Final
-      == partial(:matchup, :locals => { :state => 'inactive' })
+      article class="matchup active"
+        .inner
+          span.close Close
+          .show.first.ninety-nine
+            h2 99% Invisible
+            .overlay
+          .or or
+          .show.second.dinner-party
+            h2 The Dinner Party Download
+            .overlay
+          .poll
+            script charset="utf-8" src="http://static.polldaddy.com/p/7903745.js" type="text/javascript" 
+            noscript
+              a href="http://polldaddy.com/poll/7903745/"  99% Invisible or The Dinner Party Download?
