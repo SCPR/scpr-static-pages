@@ -13,6 +13,7 @@ $lightBlue:     #16b1e7;
 $darkBlue:      #005499;
 $brandGold:     #f7941d;
 $green:         #8bc73f;
+$purple:        #8068a1;
 
 
 // #####################################################################################################################
@@ -83,9 +84,9 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
   font-weight:600;
   padding:10px 15px;
   &.green {
-    background:$green;
+    background:$purple;
     &:hover {
-      background:darken($green, 10%);
+      background:darken($purple, 10%);
     }
   }
   &.blue {
@@ -159,7 +160,7 @@ header.masthead {
 .hero {
   @include box-shadow(inset 0 250px 250px -250px #000000);
   background:$brandBlue url("../images/laup-img-boy.jpg") center top no-repeat fixed;
-  background-size:contain;
+  background-size:cover;
   min-height:690px;
   max-height:928px;
   h1 {
@@ -280,7 +281,7 @@ header.masthead {
 .reasons {
   margin-bottom:88px;
   h2 {
-    color:$darkBlue;
+    color:$purple;
     @include px-to-ems(font-size, 56);
     margin-top:0;
     text-align:center;
@@ -290,7 +291,7 @@ header.masthead {
     padding:0;
     @include clearfix();
     li {
-      color:$darkBlue;
+      color:$grayDark;
       float:left;
       @include px-to-ems(font-size, 22);
       @include px-to-ems(line-height, 20);
@@ -330,8 +331,8 @@ header.masthead {
 .about {
   @include box-shadow(inset 0 250px 250px -250px #000000);
   background:$brandBlue url("../images/laup-img-girl.jpg") center bottom no-repeat fixed;
-  background-size:contain;
-  min-height:480px;
+  background-size:cover;
+  min-height:680px;
   max-height:928px;
   overflow:hidden;
   position:relative;
@@ -342,11 +343,11 @@ header.masthead {
     width:100%;
   }
   .about-inner {
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:300px;
+    article {
+      margin-left:50%;
+      width:50%;
+      margin-top:20%;
+    }
     h2, p {
       color:$white;
       text-shadow:0 0 4px rgba(0,0,0,0.5);
@@ -407,8 +408,8 @@ footer.affiliation {
     min-height:37em;
   }
   .about {
-    background:$brandBlue url("../images/laup-img-girl.jpg") center bottom no-repeat fixed;
-    background-size:1619px 700px;
+    background:$brandBlue url("../images/laup-img-girl.jpg") center top no-repeat fixed;
+    background-size:cover;
     height:32em;
     min-height:32em;
   }
@@ -500,10 +501,14 @@ footer.affiliation {
     background-size:960px 420px;
     height:30em;
     .about-inner {
-      bottom:30px;
+      article {
+        margin-top:10%;
+        margin-left:40%;
+        width:60%;
+      }
       p {
         @include px-to-ems(font-size, 22);
-        font-weight:600;
+        font-weight:400;
         @include px-to-ems(line-height, 24);
       }
     }
@@ -512,8 +517,8 @@ footer.affiliation {
 
 @media (max-width:480px) {
   .hero {
-    background:$brandBlue url("../images/laup-img-boy.jpg") -12px top no-repeat;
-    background-size:720px 336px;
+    background:$brandBlue url("../images/laup-img-boy.jpg") center top no-repeat;
+    background-size:cover;
     height:28em;
     h1 {
       margin-bottom:28px;
@@ -536,6 +541,12 @@ footer.affiliation {
       right:0;
       top:0;
       bottom:0;
+    }
+    .about-inner article {
+      margin-left:0;
+      position:relative;
+      width:100%;
+      z-index:300;
     }
   }
 }
