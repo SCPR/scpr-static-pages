@@ -8,6 +8,7 @@ $white:         #ffffff;
 $gray:          #898989;
 $grayLight:     #cfcfcf;
 $grayDark:      #464646;
+$black:         #000000;
 $brandBlue:     #0070b9;
 $lightBlue:     #16b1e7;
 $darkBlue:      #005499;
@@ -143,9 +144,10 @@ header.masthead {
     }
   }
   p.fineprint {
-    color:$gray;
+    color:$black;
     display:inline-block;
-    @include px-to-ems(font-size, 14);
+    @include px-to-ems(font-size, 18);
+    font-weight:600;
     margin-top:38px;
     text-align:center;
   }
