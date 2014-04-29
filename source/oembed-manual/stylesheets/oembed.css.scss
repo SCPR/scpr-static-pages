@@ -1,4 +1,5 @@
 @import 'bourbon';
+@import '/stylesheets/normalize.css';
 
 // #####################################################################################################################
 // MIXINS
@@ -71,8 +72,8 @@ hr {
 header {
   padding:2em 0;
   h1 {
-    background:url("../images/oembed/oembed-header.png") no-repeat;
-    @include image-2x("../images/oembed/oembed-header@2x.png",543px, 184px);
+    background:url("../images/oembed-header.png") no-repeat;
+    @include image-2x("../images/oembed-header@2x.png",543px, 184px);
     display:block;
     @include hide-text;
     margin:0 auto;

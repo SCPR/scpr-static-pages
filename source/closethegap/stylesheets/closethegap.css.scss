@@ -1,4 +1,5 @@
 @import 'bourbon';
+@import '/stylesheets/normalize.css';
 
 // Retina-ified BG images
 @mixin image-2x($image, $width, $height) {
@@ -77,8 +78,8 @@ h3.brand {
   margin:0;
   a {
     @include hide-text();
-    @include image-2x("../images/closethegap/logo-kpcc@2x.png",164px, 23px);
-    background:url("../images/closethegap/logo-kpcc.png") no-repeat;
+    @include image-2x("../images/logo-kpcc@2x.png",164px, 23px);
+    background:url("../images/logo-kpcc.png") no-repeat;
     display:block;
     margin:0 auto 10px;
     width:164px;
@@ -103,7 +104,7 @@ h3.brand {
     }
   }
 header {
-  background:#000 url('../images/closethegap/bg-masthead.jpg') no-repeat center center;
+  background:#000 url('../images/bg-masthead.jpg') no-repeat center center;
   background-size:contain;
   height:30em;
 }
@@ -216,7 +217,7 @@ footer {
 
 @media (max-width:80em) {
   header {
-    background:#000 url('../images/closethegap/bg-masthead.jpg') no-repeat center center;
+    background:#000 url('../images/bg-masthead.jpg') no-repeat center center;
     background-size:cover;
   }
 } 
@@ -251,7 +252,7 @@ footer {
 
 @media (max-width:56em) {
   header {
-    background:#000 url('../images/closethegap/bg-masthead.jpg') no-repeat center center;
+    background:#000 url('../images/bg-masthead.jpg') no-repeat center center;
     background-size:cover;
   }
 } 
