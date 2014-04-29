@@ -1,4 +1,5 @@
 @import 'bourbon';
+@import '/stylesheets/normalize.css';
 
 // #####################################################################################################################
 // MIXINS
@@ -96,8 +97,8 @@ h3.brand {
   width:125px;
   height:18px;
   a {
-    background:url("../images/ipad-landing/1x/logo.png") no-repeat;
-    @include image-2x("../images/ipad-landing/logo.png",125px, 18px);
+    background:url("../images/1x/logo.png") no-repeat;
+    @include image-2x("../images/logo.png",125px, 18px);
     display:block;
     @include hide-text;
     width:125px;
@@ -107,14 +108,14 @@ h3.brand {
 
 // Hero
 .hero {
-  background:url("../images/ipad-landing/ipad-hero.jpg") center top no-repeat fixed;
+  background:url("../images/ipad-hero.jpg") center top no-repeat fixed;
   background-size:contain;
   min-height:800px;
   max-height:928px;
   padding-top:0.5em;
   position:relative;
   &.launch {
-    background:url("../images/ipad-landing/iPadHero.jpg") center top no-repeat fixed;
+    background:url("../images/iPadHero.jpg") center top no-repeat fixed;
   background-size:contain;
   }
   .teaseline {
@@ -229,40 +230,40 @@ h3.brand {
       margin-right:0;
     }
     &.breaking {
-      background:url('../images/ipad-landing/1x/ico-breaking.png') no-repeat center top;
-      @include image-2x("../images/ipad-landing/ico-breaking.png",60px, 68px);
+      background:url('../images/1x/ico-breaking.png') no-repeat center top;
+      @include image-2x("../images/ico-breaking.png",60px, 68px);
     }
     &.listen-read {
-      background:url('../images/ipad-landing/1x/ico-listen-read.png') no-repeat center 6px;
-      @include image-2x("../images/ipad-landing/ico-listen-read.png",127px, 58px);
+      background:url('../images/1x/ico-listen-read.png') no-repeat center 6px;
+      @include image-2x("../images/ico-listen-read.png",127px, 58px);
     }
     &.morning-evening {
-      background:url('../images/ipad-landing/1x/ico-morning-evening.png') no-repeat center top;
-      @include image-2x("../images/ipad-landing/ico-morning-evening.png",77px, 77px);
+      background:url('../images/1x/ico-morning-evening.png') no-repeat center top;
+      @include image-2x("../images/ico-morning-evening.png",77px, 77px);
     }
     &.news {
-      background:url('../images/ipad-landing/1x/ico-news.png') no-repeat center top;
-      @include image-2x("../images/ipad-landing/ico-news.png",62px, 76px);
+      background:url('../images/1x/ico-news.png') no-repeat center top;
+      @include image-2x("../images/ico-news.png",62px, 76px);
     }
     &.programs {
-      background:url('../images/ipad-landing/1x/ico-programs.png') no-repeat center top;
-      @include image-2x("../images/ipad-landing/ico-programs.png",35px, 76px);
+      background:url('../images/1x/ico-programs.png') no-repeat center top;
+      @include image-2x("../images/ico-programs.png",35px, 76px);
     }
     &.queue {
-      background:url('../images/ipad-landing/1x/ico-queue.png') no-repeat center top;
-      @include image-2x("../images/ipad-landing/1x/ico-queue.png",69px, 58px);
+      background:url('../images/1x/ico-queue.png') no-repeat center top;
+      @include image-2x("../images/1x/ico-queue.png",69px, 58px);
     }
     &.rewind {
-      background:url('../images/ipad-landing/1x/ico-rewind.png') no-repeat center top;
-      @include image-2x("../images/ipad-landing/ico-rewind.png",70px, 77px);
+      background:url('../images/1x/ico-rewind.png') no-repeat center top;
+      @include image-2x("../images/ico-rewind.png",70px, 77px);
     }
     &.read {
-      background:url('../images/ipad-landing/1x/ico-read.png') no-repeat center 14px;
-      @include image-2x("../images/ipad-landing/ico-read.png",86px, 50px);
+      background:url('../images/1x/ico-read.png') no-repeat center 14px;
+      @include image-2x("../images/ico-read.png",86px, 50px);
     }
     &.visuals {
-      background:url('../images/ipad-landing/1x/ico-visuals.png') no-repeat center top;
-      @include image-2x("../images/ipad-landing/ico-visuals.png",80px, 66px);
+      background:url('../images/1x/ico-visuals.png') no-repeat center top;
+      @include image-2x("../images/ico-visuals.png",80px, 66px);
     }
     dt {
       color:#00b9f3;
@@ -300,7 +301,7 @@ footer {
 // Media Queries
 @media (max-width:1390px) and (min-width:980px) {
   .hero {
-    background: url("../images/ipad-landing/iPadHero.jpg") center top no-repeat;
+    background: url("../images/iPadHero.jpg") center top no-repeat;
     background-size:1400px 688px;
     h1 {
       @include px-to-ems(font-size, 50);
@@ -325,7 +326,7 @@ footer {
     margin:0 auto;
   }
   .hero.launch {
-    background: url("../images/ipad-landing/iPadHero.jpg") center top no-repeat;
+    background: url("../images/iPadHero.jpg") center top no-repeat;
     background-size:cover;
     min-height:400px;
     h1 {
@@ -355,7 +356,7 @@ footer {
 }
 @media (max-width:480px) {
   .hero {
-    background: url("../images/ipad-landing/ipad-hero.jpg") center top no-repeat;
+    background: url("../images/ipad-hero.jpg") center top no-repeat;
     background-size:977px 480px;
     min-height:500px;
     .teaseline {
