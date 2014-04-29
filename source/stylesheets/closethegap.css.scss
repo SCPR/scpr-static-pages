@@ -1,0 +1,293 @@
+@import 'bourbon';
+
+// Retina-ified BG images
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+         (-o-min-device-pixel-ratio: 2.6/2),
+         (-webkit-min-device-pixel-ratio: 1.3),
+         (min-device-pixel-ratio: 1.3),
+         (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+
+body {
+  color:#212121;
+  font-family:"merriweather", sans-serif;
+  line-height:1.4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:"freight-sans-pro", sans-serif;
+}
+
+h1 {
+  border-bottom:1px solid #31AAD3;
+  color:#fff;
+  font-size:5em;
+  line-height:1em;
+  margin:0;
+}
+
+h2 {
+  font-size:3.6em;
+  text-align:center;
+}
+
+h3 {
+  color:#0093c5;
+  font-size:1.8em;
+  font-weight:400;
+}
+h4 {
+  font-family:"merriweather", sans-serif;
+}
+
+p {
+  a {
+    color:#212121;
+    &:hover {
+      color:#31AAD3;
+    }
+  }
+  strong {
+    color:#000;
+  }
+}
+
+dl {
+  dt {
+    border-bottom:1px solid #0093c5;
+    color:#000;
+    font-size:1.5em;
+    line-height:1.2em;
+    margin-bottom:1em;
+    padding:11px 3px 10px;
+  }
+  dd {
+    color:#444;
+    margin:0 0 1.6em;
+    padding:0 14em 11px 0;
+  }
+}
+
+h3.brand {
+  margin:0;
+  a {
+    @include hide-text();
+    @include image-2x("../images/closethegap/logo-kpcc@2x.png",164px, 23px);
+    background:url("../images/closethegap/logo-kpcc.png") no-repeat;
+    display:block;
+    margin:0 auto 10px;
+    width:164px;
+    height:24px;
+  }
+}
+
+.bound {
+  margin:0 auto;
+  max-width:56em;
+}
+
+.branding {
+    background:#000;
+    border-top:1em solid #F17B21;
+    height:6em;
+    p {
+      color:#ccc;
+      font-family:"freight-sans-pro", sans-serif;
+      font-size:0.875em;
+      text-align:center;
+    }
+  }
+header {
+  background:#000 url('../images/closethegap/bg-masthead.jpg') no-repeat center center;
+  background-size:contain;
+  height:30em;
+}
+
+main {
+  margin-top:-12em;
+}
+
+article {
+  margin:3em -1em 0;
+  background:#fff;
+  padding:0.5em 2em;
+  h4 {
+    font-size:1.35em;
+    line-height:1.5em;
+    margin-bottom:0;
+  }
+  p {
+    font-size:1.125em;
+    line-height:1.5em;
+    margin-bottom:2em;
+    &:first-of-type {
+      font-size:1.5em;
+      font-weight:300;
+    }
+    &.always-be-closing {
+      color:#F17B21;
+      font-size:1.3em;
+      font-style:italic;
+      font-weight:300;
+    }
+  }
+}
+.donate {
+  background:#2EA2CC;
+  border-top:8px solid #e8e8e8;
+  color:#fff;
+  margin-bottom:8em;
+  padding:2em 0 4em;
+  .bound {
+    max-width:80em;
+  }
+  h2 b {
+    color:#003c6f;
+  }
+  .simple-form {
+    background:#fff;
+    border:1px solid darken(#2EA2CC, 20%);
+    margin:0 auto;
+    padding:3em;
+    width:60%;
+    p {
+      color:#003c6f;
+      font-size:1.4em;
+      margin-top:0;
+      text-align:center;
+      &:last-child {
+        margin-bottom:0;
+      }
+    }
+    a {
+      background:#F17B21;
+      border:1px solid darken(#F17B21, 20%);
+      color:#fff;
+      display:inline-block;
+      font-family:"freight-sans-pro", sans-serif;
+      font-size:1.6em;
+      font-weight:700;
+      margin-right:42px;
+      padding:20px;
+      text-decoration:none;
+      &:hover {
+        background:darken(#F17B21, 10%);
+      }
+      &:last-child {
+        margin-right:0;
+      }
+    }
+  }
+}
+.faq {
+  padding:0 1em;
+  hr {
+    background:#e8e8e8;
+    border:0;
+    height:10px;
+    margin-left:-90%;
+  }
+}
+
+
+footer {
+  background:#000;
+  margin-top:4em;
+  padding:1em 0;
+  p {
+    color:#fff;
+    font-size:0.75em;
+    margin-bottom:0;
+    text-align:center;
+    a {
+      color:#fff;
+      text-decoration:none;
+      &:hover {
+        text-decoration:underline;
+      }
+    }
+  }
+}
+
+@media (max-width:80em) {
+  header {
+    background:#000 url('../images/closethegap/bg-masthead.jpg') no-repeat center center;
+    background-size:cover;
+  }
+} 
+
+@media (max-width:60em) {
+  h1 {
+    font-size:4.4em;
+    margin:0 0.4em;
+  }
+  h2 {
+    font-size:3em;
+    line-height:1em;
+  }
+  article {
+    margin:3em 0 0;
+  }
+  .donate {
+    .bound {
+      max-width:100%;
+    }
+    .simple-form {
+      a {
+        display:block;
+        margin:0 0 1em;
+        &:last-child {
+          margin-bottom:0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:56em) {
+  header {
+    background:#000 url('../images/closethegap/bg-masthead.jpg') no-repeat center center;
+    background-size:cover;
+  }
+} 
+
+@media (max-width:45em) {
+  dl {
+    dd {
+      padding:0;
+    }
+  }
+}
+
+@media (max-width:36em) {
+  h1 {
+    font-size:3em;
+  }
+  article {
+    margin:1em 0 0;
+    padding:0.5em 1em;
+  }
+}
+
+@media (max-width:30em) {
+  body {
+    font-size:14px;
+  }
+  h1 {
+    font-size:2.4em;
+  }
+  footer {
+    a {
+      display:block;
+      margin-bottom:10px;
+    }
+    span.pipe {
+      display:none;
+    }
+  }
+}
