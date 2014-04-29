@@ -56,11 +56,11 @@ Slim::Engine.set_default_options :pretty => true
 
 set :partials_dir, 'partials'
 
-set :css_dir, 'stylesheets'
+set :css_dir, '.'
 
 set :js_dir, 'javascripts'
 
-set :images_dir, 'images'
+set :images_dir, '.'
 
 # Build-specific configuration
 configure :build do
