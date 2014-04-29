@@ -8,10 +8,11 @@
 /.bundle
 
 # Ignore the build directory
-# /build
+ /build
 
 # Ignore Sass' cache
 /.sass-cache
+/.cache
 
 # Ignore other junk
 .DS_Store
