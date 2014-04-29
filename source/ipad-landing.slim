@@ -2,8 +2,10 @@
   | Coming Soon: KPCC for iPad
   
 - content_for(:additional_head) do
-  ==stylesheet_link_tag "http://media.scpr.org/assets/static/stylesheets/ipad.css"
-  link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"
+  ==stylesheet_link_tag "stylesheets/ipad.css"
+  script type="text/javascript" src="//use.typekit.net/vtu6xsq.js"
+  javascript:
+    try{Typekit.load();}catch(e){}
 
 // Page Header
 header.masthead
@@ -13,7 +15,7 @@ header.masthead
 // Page Hero
 .hero.billboard
   figure
-    img src="http://media.scpr.org/assets/static/images/ipad-landing/iPadHero.jpg" alt="KPCC on the iPad - Coming Soon"
+    img src="images/ipad-landing/iPadHero.jpg" alt="KPCC on the iPad - Coming Soon"
     figcaption
       .hero-inner.bound
         p.teaseline Coming soon to your iPad
