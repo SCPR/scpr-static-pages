@@ -2,7 +2,7 @@
   | Meet KPCC for iPad | 89.3 KPCC
   
 - content_for(:additional_head) do
-  ==stylesheet_link_tag "ipad-intro.css"
+  ==stylesheet_link_tag "stylesheets/ipad-intro.css"
   script src="//use.typekit.net/tqx3xzm.js" type="text/javascript"
   javascript:
     try{Typekit.load();}catch(e){}
@@ -13,7 +13,7 @@ section.hero
   .bound
     h1 Meet KPCC for iPad.
     p.tagline Intelligent news. At your convenience.
-    // img src="images/ipad-intro/img-hero.png" alt="KPCC for iPad screenshot"
+    // img src="images/img-hero.png" alt="KPCC for iPad screenshot"
 
 // Let's give people a way to get around
 header.wayfinding
@@ -38,19 +38,19 @@ main
     figure.single-feature.sl-handpicked
       .bound
         .img-wrap
-          img src="images/ipad-intro/product-shortlist-handpicked.jpg"
+          img src="images/product-shortlist-handpicked.jpg"
         figcaption
           p Every day, we carefully select the most interesting news from KPCC and elsewhere to create The Short List.
     figure.single-feature.sl-abstracts
       .bound
         .img-wrap
-          img src="images/ipad-intro/product-shortlist-abstracts.jpg"
+          img src="images/product-shortlist-abstracts.jpg"
         figcaption
           p Swipe through summaries of stories to get caught up quickly, or dive deep into the articles that interest you.
     figure.single-feature.sl-schedule
       .bound
         .img-wrap
-          img src="images/ipad-intro/product-shortlist-schedule.jpg"
+          img src="images/product-shortlist-schedule.jpg"
         figcaption
           p A new Short List will be waiting for you in the morning and evening — right when you reach for your iPad.
   //Feature - Public Radio Visualized
@@ -63,19 +63,19 @@ main
     figure.single-feature.viz-programs
       .bound
         .img-wrap
-          img src="images/ipad-intro/product-visualized-programs.jpg"
+          img src="images/product-visualized-programs.jpg"
         figcaption
           p Enjoy full-screen photos of your favorite public radio personalities while browsing recent episodes.
     figure.single-feature.viz-slideshows
       .bound
         .img-wrap
-          img src="images/ipad-intro/product-visualized-slideshows.jpg"
+          img src="images/product-visualized-slideshows.jpg"
         figcaption
           p Swipe through slideshows and videos from our team of award-winning photojournalists. 
     / figure.single-feature.viz-events
     /   .bound
     /     .img-wrap
-    /       img src="images/ipad-intro/product-visualized-events.jpg"
+    /       img src="images/product-visualized-events.jpg"
     /     figcaption
     /       p Watch live video of events from KPCC’s Crawford Family Forum, either on your iPad or beamed to your AppleTV.
   //Feature - Great Listening
@@ -89,7 +89,7 @@ main
       figure.queue
         .bound
           .img-wrap
-            img src="images/ipad-intro/product-listening-queue.jpg"
+            img src="images/product-listening-queue.jpg"
           figcaption
             h4 Save audio to listen later
             p Save the audio you love and listen to it anytime. The queue is your personal radio station, a lineup of all the stories and segments that you’ve selected for later listening.
@@ -98,7 +98,7 @@ main
       figure.favorites
         .bound
           .img-wrap
-            img src="images/ipad-intro/product-listening-favorites.jpg"
+            img src="images/product-listening-favorites.jpg"
           figcaption
             h4 Your favorite programs, at your fingertips
             p Tell KPCC for iPad your favorite programs. We’ll put them in your menu for quick access. 
@@ -113,19 +113,19 @@ main
     figure.single-feature.cn-coverage
       .bound
         .img-wrap
-          img src="images/ipad-intro/product-news-coverage.jpg"
+          img src="images/product-news-coverage.jpg"
         figcaption
           p KPCC publishes dozens of articles every day, covering the most important news in SoCal and beyond.
     figure.single-feature.cn-notifications
       .bound
         .img-wrap
-          img src="images/ipad-intro/product-news-notifications.jpg"
+          img src="images/product-news-notifications.jpg"
         figcaption
           p Get push notifications when breaking news happens, from a trusted news source.
     figure.single-feature.cn-forum
       .bound
         .img-wrap
-          img src="images/ipad-intro/product-news-forum.jpg"
+          img src="images/product-news-forum.jpg"
         figcaption
           p RSVP to attend live events in KPCC’s Crawford Family Forum, or stream live events on your iPad.
   // Always Be Closing!
@@ -134,7 +134,7 @@ main
       h1 KPCC for iPad
       p.tagline Free on the App Store.
       a href="http://kp.cc/1b9oPzy"
-        img src="images/ipad-intro/Download_on_the_App_Store_Badge_US-UK_135x40.png" alt="Download KPCC for iPad on the App Store"
+        img src="images/Download_on_the_App_Store_Badge_US-UK_135x40.png" alt="Download KPCC for iPad on the App Store"
 
 footer
   .bound
@@ -146,5 +146,4 @@ footer
       | © 2013 Southern California Public Radio
 
 - content_for(:additional_foot) do
-  script src="javascripts/skrollr.min.js" type="text/javascript"
   script src="javascripts/ipad.js" type="text/javascript"

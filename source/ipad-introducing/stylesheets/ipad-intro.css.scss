@@ -1,5 +1,6 @@
 // Import vendor dependencies
 @import "bourbon";
+@import "/stylesheets/normalize.css";
 
 
 // VARIABLES
@@ -83,7 +84,7 @@ p {
     font-size:1em;
     margin:1.5em 0 0;
     a {
-      background:url('../images/ipad-intro/logo-small.png');
+      background:url('../images/logo-small.png');
       display:block;
       width:111px;
       height:16px;
@@ -109,7 +110,7 @@ p {
             text-decoration:underline;
           }
           &.download {
-            background:url('../images/ipad-intro/icon-appstore.png') no-repeat 0 0;
+            background:url('../images/icon-appstore.png') no-repeat 0 0;
             color:#1BA3F7;
             padding:0 0 2px 28px;
           }
@@ -120,7 +121,7 @@ p {
 
 // Page Hero
 .hero {
-  background:$grayLight url('../images/ipad-intro/bg-hero.jpg') fixed no-repeat center top;
+  background:$grayLight url('../images/bg-hero.jpg') fixed no-repeat center top;
   background-size:cover;
   border-top:4em solid $grayDark;
   position:relative;
@@ -143,16 +144,16 @@ p {
 
 // Content Sections
 #short-list .feature-intro:before {
-  background:url('../images/ipad-intro/badge-arrow.png') no-repeat 0 0;
+  background:url('../images/badge-arrow.png') no-repeat 0 0;
 }
 #radio-visualized .feature-intro:before {
-  background:url('../images/ipad-intro/badge-visuals.png') no-repeat 0 0;
+  background:url('../images/badge-visuals.png') no-repeat 0 0;
 }
 #great-listening .feature-intro:before {
-  background:url('../images/ipad-intro/badge-listening.png') no-repeat 0 0;
+  background:url('../images/badge-listening.png') no-repeat 0 0;
 }
 #comprehensive-news .feature-intro:before {
-  background:url('../images/ipad-intro/badge-news.png') no-repeat 0 0;
+  background:url('../images/badge-news.png') no-repeat 0 0;
 }
 
 .feature-area {
@@ -192,7 +193,7 @@ p {
       position:relative;
       &:before {
         content:"";
-        background:url('../images/ipad-intro/element-ipad-chrome.png') no-repeat 0 0;
+        background:url('../images/element-ipad-chrome.png') no-repeat 0 0;
         display:block;
         position:absolute;
         width:514px;
@@ -215,16 +216,16 @@ p {
     }
   }
     #short-list .bg {
-      background:url('../images/ipad-intro/bg-sl-handpicked.jpg') fixed no-repeat center top;
+      background:url('../images/bg-sl-handpicked.jpg') fixed no-repeat center top;
     }
     #radio-visualized .bg {
-      background:url('../images/ipad-intro/bg-viz-programs.jpg') fixed no-repeat center top; 
+      background:url('../images/bg-viz-programs.jpg') fixed no-repeat center top; 
     }
     #great-listening .bg {
-      background:url('../images/ipad-intro/bg-gl-programs.jpg') fixed no-repeat center top;
+      background:url('../images/bg-gl-programs.jpg') fixed no-repeat center top;
     }
     #comprehensive-news .bg {
-      background:url('../images/ipad-intro/bg-cn-coverage.jpg') fixed no-repeat center top;
+      background:url('../images/bg-cn-coverage.jpg') fixed no-repeat center top;
     }
 
 .app-store {
