@@ -10,7 +10,7 @@ html
     ==javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"
 
     == yield_content(:additional_head)
-  body
+  body class=(page_classes)
     == yield
 
     //Load JQ after page content

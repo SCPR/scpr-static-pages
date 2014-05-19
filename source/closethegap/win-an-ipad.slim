@@ -1,0 +1,78 @@
+- content_for(:page_title) do
+  | Give now and enter to win an iPad - 89.3 KPCC
+  
+- content_for(:additional_head) do
+  meta name="description" content="Due to a spate of credit card security breaches that have happened since last winter’s holiday season, thousands of KPCC memberships were inadvertently canceled, resulting in a significant amount of lost revenue. In order to overcome this deficit without sacrificing the quality of our programming, KPCC needs 9,000 listeners to show their support by June 30th, 2014."
+  meta name="keywords" content="public radio, southern california public radio, kpcc, 89.3"
+  meta name="author" content="89.3 KPCC"
+
+  /! Facebook Metadata
+  meta property="og:site_name" content="89.3 KPCC"
+  meta property="article:publisher" content="https://www.facebook.com/kpcc"
+  meta property="og:title" content="Give now and enter to win an iPad"
+  meta property="og:url" content="http://scpr.org/closethegap/win-an-ipad.html"
+  meta property="og:type" content="article"
+  meta property="og:image" content="http://scpr.org/assets/kpcc-twitter-logo-20a598f08e72bbda5ff436c94399d760.png"
+  meta property="og:description" content="Don't have an iPad? KPCC with give you one. To enter, simply choose a donation amount below and make a contribution in any amount. Support the news you love and win today."
+
+  /! Twitter Metadata
+  meta name="twitter:card" content="summary"
+  meta name="twitter:domain" content="http://scpr.org/"
+  meta name="twitter:site" content="KPCC"
+  meta name="twitter:image:src" content="http://scpr.org/assets/kpcc-twitter-logo-20a598f08e72bbda5ff436c94399d760.png"
+  meta name="twitter:description" content="Don't have an iPad? KPCC with give you one. To enter, simply choose a donation amount below and make a contribution in any amount. Support the news you love and win today."
+  meta name="twitter:title" content="Give now and enter to win an iPad"
+  meta name="twitter:url" content="http://scpr.org/closethegap/win-an-ipad.html"
+
+  link href="stylesheets/closethegap.css" media="screen" rel="stylesheet" type="text/css"
+  link href="stylesheets/winanipad.css" media="screen" rel="stylesheet" type="text/css"
+
+  /! Load Web Fonts
+  link href="http://fonts.googleapis.com/css?family=Merriweather:700,400,300,700italic,400italic,300italic" rel="stylesheet" type="text/css"
+  script type="text/javascript" src="//use.typekit.net/vtu6xsq.js"
+  javascript:
+    try{Typekit.load();}catch(e){}
+
+.branding
+  .bound
+    h3.brand: a href="http://www.scpr.org" title="KPCC" KPCC
+header
+  .overlay
+main
+  .bound
+    h1 Give now and enter to win an iPad!
+    article
+      p Here’s your chance to win a brand new iPad - just for supporting public radio! To enter automatically, make a contribution to KPCC by choosing your donation amount below and completing the form. 
+      p.always-be-closing
+        | You’ll be supporting the independent, trustworthy news you love, and you’ll be entered to win that brand new iPad. 
+        strong But don’t wait, time is running out to get in on this giveaway.
+.bound
+  section.donate
+        h2 Don't miss your chance to win!
+        h2: b Donate now:
+        .simple-form
+          p Select an amount
+          p
+            a.track-event data-ga-category="Win an iPad Landing Page" data-ga-action="Pledge" data-ga-label="$10 per month" href="https://scprcontribute.publicradio.org/contribute.php?refId=ctgpush&askAmount=120" $10/mo
+            a.track-event data-ga-category="Win an iPad Landing Page" data-ga-action="Pledge" data-ga-label="$15 per month"  href="https://scprcontribute.publicradio.org/contribute.php?refId=ctgpush&askAmount=180" $15/mo
+            a.track-event data-ga-category="Win an iPad Landing Page" data-ga-action="Pledge" data-ga-label="$30 per month"  href="https://scprcontribute.publicradio.org/contribute.php?refId=ctgpush&askAmount=360" $30/mo
+
+footer.footer
+  .bound
+    h3.brand: a href="http://www.scpr.org" title="KPCC" KPCC
+    p
+      a href="http://www.scpr.org/terms" Terms & Conditions 
+      span.pipe | 
+      a href="http://www.scpr.org/privacy" Privacy 
+      span.pipe | 
+      span © #{Time.now.year} Southern California Public Radio
+
+
+- content_for(:additional_foot) do
+
+  ==javascript_include_tag "javascripts/all.js"
+
+  javascript:
+    $(function() {
+      eventTracking     = new scpr.EventTracking();
+    });
