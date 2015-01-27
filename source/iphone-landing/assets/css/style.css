@@ -143,9 +143,78 @@ input {
 
 
 /* HEADER SECTION */
+.wayfinding {
+  background: rgba(46, 50, 52, 0.95);
+  position: fixed;
+  top: 0;
+  z-index: 300;
+  width: 100%;
+  height: 4em;
+}
+.wayfinding::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.brand {
+  float: left;
+  font-size: 1em;
+  margin: 1.5em 0 0;
+}
+.brand a {
+  background: url("../img/logo-small@2x.png");
+  background-size: 111px 16px;
+  display: block;
+  width: 111px;
+  height: 16px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.brand a:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%;
+}
+
+.nav-global {
+  float: right;
+}
+.nav-global ul {
+  list-style: none;
+  margin: 1.28em 0 0;
+  padding: 0;
+}
+.nav-global ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.nav-global ul li {
+  float: left;
+  margin-left: 3em;
+}
+.nav-global ul li a {
+  color: #fff;
+  display: block;
+  font-size: 1.125em;
+  text-decoration: none;
+}
+.nav-global ul li a:hover {
+  text-decoration: underline;
+}
+.nav-global ul li a.download {
+  background: url("../img/icon-appstore@2x.png") no-repeat 0 0;
+  background-size: 24px 24px;
+  color: #1BA3F7;
+  padding: 0 0 2px 30px;
+}
+
+
+
 #h {
 	background: url(../img/header.jpg) no-repeat center top;
-	padding-top: 200px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -165,12 +234,12 @@ input {
 
 #h h1 {
 	font-weight: 900;
-	color: #03C9A9;
+	color: #fff;
 	font-size: 90px;
 }
 
 #h h2 {
-	color: #1BA39C;
+	color: #fff;
 }
 
 /* CALL TO ACTION SECTION */
@@ -178,7 +247,7 @@ input {
 #cta {
 	padding-bottom: 15px;
 	padding-top: 15px;
-	background: #2f2f2f;
+	background: #222628;
 }
 
 #cta p {
@@ -199,12 +268,12 @@ input {
 	font-size: 16px;
 }
 
-/* Green Section */
+/* Blue Section */
 
 #g {
+	background: #31ABD4;
 	padding-bottom: 50px;
 	padding-top: 50px;
-	background: #03C9A9;
 	min-height: 700px;
 	color: white;
 }
@@ -220,14 +289,14 @@ input {
 	font-size: 16px;
 }
 
-/* Red Section */
+/* White Section */
 
 #r {
-	background: #F62459;
+	background: #fff;
 	padding-bottom: 50px;
 	padding-top: 50px;
 	min-height: 700px;
-	color: white;
+	color: black;
 }
 
 #r h1 {
@@ -237,14 +306,14 @@ input {
 }
 
 #r p {
-	color: white;
+	color: black;
 	font-size: 16px;
 }
 
-/* Blue Section */
+/* Orange Section */
 
 #b {
-	background: #19B5FE;
+	background: #F87E21;
 	padding-bottom: 50px;
 	padding-top: 50px;
 	min-height: 700px;
