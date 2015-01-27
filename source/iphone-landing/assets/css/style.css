@@ -11,13 +11,10 @@
 	1. GENERAL STRUCTURES
 ################################################################# */
 
-/* Import fonts */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
-
 * { 
 	margin: 0;
 	padding: 0px;
-    font-family: 'Lato', sans-serif;
+  font-family:"freight-sans-pro", "Avenir Next," Helvetica, "Droid Sans", sans-serif; 
 } 
 body { 
 	background: #fff; 
@@ -26,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+  font-family:"freight-sans-pro", "Avenir Next," Helvetica, "Droid Sans", sans-serif; 
 	font-weight: 300;
 }
 
@@ -34,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 p { 
 	padding: 0; 
 	margin-bottom: 12px; 
-    font-family: 'Lato', sans-serif;
+  font-family:"freight-sans-pro", "Avenir Next," Helvetica, "Droid Sans", sans-serif; 
 	font-weight: 300;
 	font-size: 18px; 
 	line-height: 28px;
