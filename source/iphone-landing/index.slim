@@ -1,0 +1,132 @@
+- content_for(:page_title) do
+  | The all-new KPCC for iPhone | 89.3 KPCC
+  
+- content_for(:additional_head) do
+
+  /! Bootstrap core CSS
+  link href="assets/css/bootstrap.css" rel="stylesheet" /
+  /! Custom styles for this template
+  link href="assets/css/custom-animations.css" rel="stylesheet" /
+  link href="assets/css/style.css" rel="stylesheet" /
+  /! IE10 viewport hack for Surface/desktop Windows 8 bug
+  script src="assets/js/ie10-viewport-bug-workaround.js" 
+  /! HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+  /![if lt IE 9]
+    | <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    | <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  script src="//use.typekit.net/tqx3xzm.js" type="text/javascript"
+  javascript:
+    try{Typekit.load();}catch(e){}
+
+  /! ********** HEADER SECTION **********
+  #h
+    .container
+      .row.centered
+        h1 Landing Sumo
+        h2 MINIMAL LANDING PAGE
+      /! /row
+    /! /container
+  /! /header
+  /! ********** WHITE SECTION **********
+  #w
+    .container
+      .row.centered
+        .col-md-8.col-md-offset-2
+          h4
+            | WE CREATED AN AWESOME APP WITH ALL OUR
+            i.glyphicon.glyphicon-heart
+          br/
+          i.glyphicon.glyphicon-chevron-down
+        /! col-md-8
+      /! /row
+    /! /container
+  /! /w
+  /! ********** GREEN SECTION **********
+  #g
+    .container
+      .row.mt
+        .col-md-6.centered
+          img.img-responsive.aligncenter alt="" data-effect="slide-left" src="assets/img/iPhone-white.png" width="320" /
+        /! /col-md-6
+        .col-md-4
+          h1 data-effect="slide-right"  1
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        /! /col-md-4
+      /! /row
+    /! /container
+  /! /G
+  /! ********** CTA SECTION **********
+  #cta
+    .container
+      .row
+        .col-md-8.col-md-offset-2.centered
+          p BUY LANDING SUMO NOW
+      /! /row
+    /! /container
+  /! /CTA
+  /! ********** RED SECTION **********
+  #r
+    .container
+      .row.mt
+        .col-md-4.col-md-offset-2
+          h1 data-effect="slide-left"  2
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        /! /col-md-4
+        .col-md-6.centered
+          img.img-responsive.aligncenter alt="" data-effect="slide-right" src="assets/img/iPhone-green.png" width="320" /
+        /! /col-md-6
+      /! /row
+    /! /container
+  /! /R
+  /! ********** CTA SECTION **********
+  #cta
+    .container
+      .row
+        .col-md-8.col-md-offset-2.centered
+          p PRE-ORDER OUR BUNDLE
+      /! /row
+    /! /container
+  /! /CTA
+  /! ********** BLUE SECTION **********
+  #b
+    .container
+      .row.mt
+        .col-md-6.centered
+          img.img-responsive.aligncenter alt="" data-effect="slide-left" src="assets/img/iPhone-red.png" width="320" /
+        /! /col-md-6
+        .col-md-4
+          h1 data-effect="slide-right"  3
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        /! /col-md-4
+      /! /row
+    /! /container
+  /! /B
+  /! ********** CTA SECTION **********
+  #cta
+    .container
+      .row
+        .col-md-8.col-md-offset-2.centered
+          p GRAB NOW OUR AWESOME OFFER
+      /! /row
+    /! /container
+  /! /CTA
+  /! ********** FOOTER SECTION **********
+  #f
+    .container
+      .row.centered.mtb
+        h3 Be The First To Know About Our Launch
+        .col-md-6.col-md-offset-3.mt data-effect="slide-bottom" 
+          form action="register.php" enctype="plain" method="post" role="form" 
+            input.subscribe-input name="email" placeholder=("Enter your e-mail address...") required="" type="email" /
+            button.btn.btn-lg.btn-green.subscribe-submit type="submit"  Yes, Please
+      /! /row
+    /! /container
+  /! /F
+  /!
+    | Bootstrap core JavaScript
+    | \==================================================
+  /! Placed at the end of the document so the pages load faster
+  script src="assets/js/jquery.min.js" 
+  script src="assets/js/bootstrap.min.js" 
+  script src="assets/js/retina-1.1.0.js" 
+  script src="assets/js/jquery.unveilEffects.js" 
