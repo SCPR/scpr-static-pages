@@ -129,14 +129,14 @@ input {
 	right: 0;
 }
 
-.btn-green {
-	background: #03C9A9;
+.btn-blue {
+	background: #31ABD4;
 	color: white;
 	border-radius: 2px;
 }
 
-.btn-green:hover {
-	background: #1BBC9B;
+.btn-blue:hover {
+	background: #46b4d8;
 	color: white
 }
 
