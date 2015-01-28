@@ -53,7 +53,7 @@ body {
 	clear: both;
 }
 .centered {text-align: center}
-.mt {margin-top: 50px;}
+.mt {margin-top: 20px;}
 .mb {margin-bottom: 50px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
@@ -218,7 +218,8 @@ input {
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 700px;
+	min-height: 720px;
+	padding-top: 72px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -252,20 +253,27 @@ input {
 
 #cta p {
 	color: #f2f2f2;
-	font-size: 16px;
+	font-size: 24px;
+	margin:14px 0 24px;
 }
 
 /* White Section */
 #w {
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 	padding-top: 50px;
 	color: #bfbfbf
 }
 
+#w h4 {
+	color:#444;
+	font-size: 24px;
+	margin-top: 28px;
+}
+
 #w i {
-	color: #D2527F;
+	color: #31ABD4;
 	margin-left: 5px;
-	font-size: 16px;
+	font-size: 26px;
 }
 
 /* Blue Section */
@@ -279,14 +287,14 @@ input {
 }
 
 #g h1 {
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: 700;
 	text-align: center;
 }
 
 #g p {
 	color: white;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 /* White Section */
@@ -300,14 +308,15 @@ input {
 }
 
 #r h1 {
-	font-size: 80px;
+	font-size: 50px;
 	font-weight: 700;
+	margin-bottom: 18px;
 	text-align: center;
 }
 
 #r p {
 	color: black;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 /* Orange Section */
@@ -321,14 +330,14 @@ input {
 }
 
 #b h1 {
-	font-size: 80px;
+	font-size: 48px;
 	font-weight: 700;
 	text-align: center;
 }
 
 #b p {
 	color: white;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 /* FOOTER Section */
@@ -339,6 +348,15 @@ input {
 	background: #010101;
 }
 
+#f img {
+	margin-bottom: 48px;
+}
+
 #f h3 {
 	color: white;
+}
+
+#f p {
+	font-size: 24px;
+	margin-bottom: 36px;
 }
