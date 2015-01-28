@@ -360,3 +360,22 @@ input {
 	font-size: 24px;
 	margin-bottom: 36px;
 }
+
+@media screen and (max-width: 767px) {
+    .wayfinding nav {
+    	display: none;
+    }
+    .wayfinding .brand {
+    	float: none;
+    	margin: 1.5em auto 0;
+    }
+    .wayfinding .brand a {
+    	display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	#h h1 {
+		font-size: 65px;
+	}
+}
