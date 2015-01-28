@@ -19,11 +19,27 @@
     try{Typekit.load();}catch(e){}
 
   /! ********** HEADER SECTION **********
+  header.wayfinding
+    .container
+      .row.centered
+        h4 class="brand"
+          a href="http://www.scpr.org" rel="author" 89.3 KPCC
+        nav.nav-global
+          ul
+            li
+              a href="#g"  Live Rewind
+            li
+              a href="#r"  Programs On-Demand
+            li
+              a href="#b"  The Short List
+            li
+              a.download href="https://itunes.apple.com/us/app/kpcc-radio/id293825085?mt=8"  Get the App
+
   #h
     .container
       .row.centered
-        h1 Landing Sumo
-        h2 MINIMAL LANDING PAGE
+        h1 Smart. Sound. SoCal.
+        h2 The all-new KPCC for iPhone
       /! /row
     /! /container
   /! /header
@@ -32,16 +48,17 @@
     .container
       .row.centered
         .col-md-8.col-md-offset-2
+          a href="https://itunes.apple.com/us/app/kpcc-radio/id293825085?mt=8"
+            img alt="Download KPCC for iPhone on the App Store" src="assets/img/Download_on_the_App_Store_Badge_US-UK_135x40.png"
           h4
-            | WE CREATED AN AWESOME APP WITH ALL OUR
-            i.glyphicon.glyphicon-heart
+            | or Learn More
           br/
           i.glyphicon.glyphicon-chevron-down
         /! col-md-8
       /! /row
     /! /container
   /! /w
-  /! ********** GREEN SECTION **********
+  /! ********** LIVE REWIND SECTION **********
   #g
     .container
       .row.mt
@@ -49,28 +66,19 @@
           img.img-responsive.aligncenter alt="" data-effect="slide-left" src="assets/img/iPhone-white.png" width="320" /
         /! /col-md-6
         .col-md-4
-          h1 data-effect="slide-right"  1
-          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          h1 data-effect="slide-right" Smarter Streaming.
+          p KPCC's live stream just got even smarter. If a show is already underway on our live stream, you can now rewind to the beginnning of the show. And our app automatically adapts to your network speed, giving you higher-quality audio on Wi-Fi and reliable streaming on cellular networks. 
         /! /col-md-4
       /! /row
     /! /container
   /! /G
-  /! ********** CTA SECTION **********
-  #cta
-    .container
-      .row
-        .col-md-8.col-md-offset-2.centered
-          p BUY LANDING SUMO NOW
-      /! /row
-    /! /container
-  /! /CTA
-  /! ********** RED SECTION **********
+  /! ********** ON-DEMAND SECTION **********
   #r
     .container
       .row.mt
         .col-md-4.col-md-offset-2
-          h1 data-effect="slide-left"  2
-          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          h1 data-effect="slide-left" Your shows, your schedule.
+          p Miss the last episode of Off-Ramp? No problem. Had to get to an appointment before All Things Considered was over? We’ve got you. KPCC’s new and improved app allows you to listen to all our shows – news, entertainment, local, national – when it’s most convenient for you.
         /! /col-md-4
         .col-md-6.centered
           img.img-responsive.aligncenter alt="" data-effect="slide-right" src="assets/img/iPhone-green.png" width="320" /
@@ -78,16 +86,7 @@
       /! /row
     /! /container
   /! /R
-  /! ********** CTA SECTION **********
-  #cta
-    .container
-      .row
-        .col-md-8.col-md-offset-2.centered
-          p PRE-ORDER OUR BUNDLE
-      /! /row
-    /! /container
-  /! /CTA
-  /! ********** BLUE SECTION **********
+  /! ********** SHORT LIST SECTION **********
   #b
     .container
       .row.mt
@@ -95,18 +94,20 @@
           img.img-responsive.aligncenter alt="" data-effect="slide-left" src="assets/img/iPhone-red.png" width="320" /
         /! /col-md-6
         .col-md-4
-          h1 data-effect="slide-right"  3
-          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          h1 data-effect="slide-right" SoCal headlines, distilled.
+          p Every day, we carefully select the most interesting news from KPCC and elsewhere to create The Short List. Whether you have 30 seconds to spare or 30 minutes to explore, The Short List is a great way to experience SoCal news. 
         /! /col-md-4
       /! /row
     /! /container
   /! /B
-  /! ********** CTA SECTION **********
+  /! ********** ANDROID CTA **********
   #cta
     .container
       .row
         .col-md-8.col-md-offset-2.centered
-          p GRAB NOW OUR AWESOME OFFER
+          p KPCC for iPhone: Available now in the App Store.
+          p: a href="https://itunes.apple.com/us/app/kpcc-radio/id293825085?mt=8"
+            img alt="Download KPCC for iPhone on the App Store" src="assets/img/Download_on_the_App_Store_Badge_US-UK_135x40.png"
       /! /row
     /! /container
   /! /CTA
@@ -114,11 +115,13 @@
   #f
     .container
       .row.centered.mtb
-        h3 Be The First To Know About Our Launch
+        p  Also coming soon for Android
+        img src="assets/img/Android_Robot_200.png" width="100"
+        h3 Get notified when KPCC's Android update is available: 
         .col-md-6.col-md-offset-3.mt data-effect="slide-bottom" 
           form action="register.php" enctype="plain" method="post" role="form" 
             input.subscribe-input name="email" placeholder=("Enter your e-mail address...") required="" type="email" /
-            button.btn.btn-lg.btn-green.subscribe-submit type="submit"  Yes, Please
+            button.btn.btn-lg.btn-green.subscribe-submit type="submit" Notify Me!
       /! /row
     /! /container
   /! /F
