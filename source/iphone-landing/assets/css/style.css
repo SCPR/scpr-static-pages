@@ -375,7 +375,21 @@ input {
 }
 
 @media screen and (max-width: 600px) {
+  #h {
+    min-height: 500px;
+  }
 	#h h1 {
-		font-size: 65px;
+		font-size: 50px;
 	}
+  #h h2 {
+    font-size: 24px;
+  }
+  #g h1 {
+    font-size: 50px;
+  }
+  .subscribe-input {
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 60%;
+  }
 }
