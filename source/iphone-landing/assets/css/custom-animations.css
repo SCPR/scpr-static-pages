@@ -1,7 +1,7 @@
 /*CUSTOM ANIMATIONS*/
 
 /* Please Note: To use this CSS, you should include in your HTML the proper javascript: jquery.unveilEffects.js */
-
+@media screen and (min-width: 768px) {
 
 	[class*=".effect-"] {
 	  -webkit-backface-visibility: hidden;
@@ -175,3 +175,5 @@
 	  -ms-transform: rotateY(0);
 	  transform: rotateY(0);
 	}
+
+}
