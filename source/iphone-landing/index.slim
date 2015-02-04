@@ -115,14 +115,22 @@
   #f
     .container
       .row.centered.mtb
-        .col-md-6
+        .col-md-12
           p  Also coming soon for Android
           img src="assets/img/Android_Robot_200.png" width="100"
           h3 Get notified when KPCC's Android update is available: 
         .col-md-6.col-md-offset-3.mt data-effect="slide-bottom" 
-          form action="register.php" enctype="plain" method="post" role="form" 
-            input.subscribe-input name="email" placeholder=("Enter your e-mail address...") required="" type="email" /
+          form#form610 action="https://s1715082578.t.eloqua.com/e/f2" method="post" name="UntitledForm-1423005376107" 
+            input name="elqFormName" type="hidden" value="UntitledForm-1423005376107"
+            input name="elqSiteId" type="hidden" value="1715082578"
+            input name="elqCampaignId" type="hidden"
+
+            input#field0.subscribe-input name="emailAddress" type="email" placeholder=("Enter your e-mail address...")
             button.btn.btn-lg.btn-blue.subscribe-submit type="submit" Notify Me!
+
+          script src="https://img.en25.com/i/livevalidation_standalone.compressed.js" type="text/javascript" 
+          javascript:
+            | var field0 = new LiveValidation("field0", {validMessage: "", onlyOnBlur: true});
       /! /row
     /! /container
   /! /F
