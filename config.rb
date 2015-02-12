@@ -45,11 +45,13 @@ activate :livereload
 # activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  # Combine Middleman's default page_classes with custom classes
+  # and append them to the <body> element
+  def custom_page_classes
+    page_classes + " " + yield_content(:pageclasses).to_s
+  end
+end
 
 # Set slim-lang output style
 Slim::Engine.set_default_options :pretty => true
