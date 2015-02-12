@@ -1,0 +1,238 @@
+- content_for(:page_title) do
+  | 2015 Los Angeles City Elections Candidate Guide | 89.3 KPCC
+
+- content_for :pageclasses do
+  | minimal 
+
+- content_for(:additional_head) do
+
+    link href="http://media.scpr.org/favicon.ico" rel=("shortcut icon") /
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    meta content="yes" name="apple-mobile-web-app-capable" /
+    meta content="black" name="apple-mobile-web-app-status-bar-style" /
+    link href="http://media.scpr.org/assets/images/icon.png" rel="apple-touch-icon" /
+    meta content="telephone=no" name="format-detection" /
+    meta content="IE=Edge" http-equiv="X-UA-Compatible" /
+    meta content="#" name="robots" /
+    meta content=("015 Los Angeles City Elections Candidate Guide") property="og:title" /
+    meta content="website" property="og:type" /
+    meta content="http://www.scpr.org/assets/kpcc-twitter-logo-f43790c570b1b6c6890ce868e0c654b8.png" property="og:image" /
+    meta content="500" property="og:image:width" /
+    meta content="500" property="og:image:height" /
+    meta content="http://projects.scpr.org/applications/2015-la-election-guide/" property="og:url" /
+    meta content="summary" name="twitter:card" /
+    meta content="http://projects.scpr.org/applications/2015-la-election-guide/" name="twitter:domain" /
+    meta content="KPCC" name="twitter:site" /
+    meta content="http://www.scpr.org/assets/kpcc-twitter-logo-f43790c570b1b6c6890ce868e0c654b8.png" name="twitter:image:src" /
+    meta content=("2015 Los Angeles City Elections Candidate Guide") name="twitter:title" /
+    meta content="http://projects.scpr.org/applications/2015-la-election-guide/" name="twitter:url" /
+    /! end meta
+    /! begin css
+    link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" /
+    link href="http://projects.scpr.org/static-files/css/jquery-alerts/jquery.alerts.css" media="all" rel="stylesheet" type="text/css" /
+    link href="http://projects.scpr.org/static-files/v3-dependencies/css/main-foundation-style-v3.css" rel="stylesheet" /
+    link href="css/style.css" rel="stylesheet" /
+    /! end css
+    /! begin base scripts
+    script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js" 
+    script src="http://use.typekit.com/mhc7oxs.js" 
+    javascript:
+      try{Typekit.load();}catch(e){}
+    /! end base scripts
+    script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
+
+
+.kpcc-header
+    header
+      nav.navbar.navbar-default role="navigation" 
+        .container.data-container
+          .navbar-header
+            button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button" 
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            h3#site-title
+              a href="http://www.scpr.org/"  KPCC 89.3
+          .data-share.navbar-collapse.collapse
+            ul.nav.navbar-nav.navbar-right.header-links.clearfix
+              li.projects-pledge
+                a.pledge-now.icon href="https://scprcontribute.publicradio.org/"  Contribute to KPCC
+                a href="https://scprcontribute.publicradio.org/" target="_blank" 
+                  b Pledge now
+              li.projects-share
+                .share-links.clearfix
+                  javascript:
+                     function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}
+                  a.facebook.icon href="https://www.facebook.com/sharer/sharer.php?u=http://projects.scpr.org/" onclick=("return fbs_click()") target="_blank" title=("Share This on Facebook") 
+                  a.twitter.icon href="http://twitter.com/share?text=We've collected our interactive maps, databases and charts so you can explore past projects by topic.&amp;url=http://projects.scpr.org/" 
+                b Share this
+              li.projects-embed
+                a.embed-this.icon href="javascript:void(0)" onclick="initializeProject.renderEmbedBox()"  Embed This
+                a href="javascript:void(0)" onclick="initializeProject.renderEmbedBox()" target="_blank" 
+                  b Embed This
+              li.projects-home
+                a.projects-home.icon href="http://projects.scpr.org/"  Projects Home
+                a href="http://projects.scpr.org/" 
+                  b All Projects
+
+/! begin main container
+.container.data-container
+  .row.data-details
+    .col-xs-12.col-sm-12.col-md-12.col-lg-12
+      h4.kicker Politics
+      h1 2015 L.A. City Primary Election - Candidate Guide
+      hr
+      h5 See who’s appearing on the ticket on March 3, and find out more about the candidates running in your district.
+      p: em Source: The information on this page was provided by the candidates themselves via SmartVoter.org.
+      #content-article
+        .dropdown
+          button#dLabel aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
+            | Jump to a Specific Race
+            span.caret
+          ul.dropdown-menu aria-labelledby="dLabel" role="menu" 
+            li: a href="#1" LA City Council District 2
+            li: a href="#2" LA City Council District 4
+            li: a href="#3" LA City Council District 6
+            li: a href="#4" LA City Council District 8
+            li: a href="#5" LA City Council District 10
+            li: a href="#6" LA City Council District 12
+            li: a href="#7" LA City Council District 14
+            li: a href="#8" LAUSD School Board District 1
+            li: a href="#9" LAUSD School Board District 3
+            li: a href="#10" LAUSD School Board District 5
+            li: a href="#11" LAUSD School Board District 7
+
+  .row.data-visuals
+    - current_contest = nil
+    - contest_anchor  = 0
+    - data.smartvoter.candidates.each do |c|
+      - if c.contest != current_contest
+        - current_contest = c.contest
+        - contest_anchor = contest_anchor + 1
+        h3 id="#{contest_anchor}" = current_contest
+      #representative-container.row
+        #representative-image.col-xs-12.col-sm-4.col-md-3.col-lg-3
+          img.responsive src="images/#{c.candidate.downcase.strip.gsub(' ', '_').gsub(/[^\w-]/, '')}.jpg" /
+        #representative-bio.col-xs-12.col-sm-8.col-md-9.col-lg-9
+          .row
+            .col-xs-12.col-sm-12.col-md-12.col-lg-12
+              h4 = c.candidate
+          div style="width:50%;float:left;" 
+            h6 Biographical Highlights
+            - if c.biofacts.any?
+              ul
+                - c.biofacts.each do |b|
+                  li = b
+            - else
+              p: em Information not available
+          div style="width:50%;float:left;" 
+            h6 Top Priorities if Elected
+            - if c.priorities.any?
+              ul
+                - c.priorities.each do |p|
+                  li = p
+            - else
+              p: em Information not available
+          .row style="clear:left;" 
+            - unless c.candidate_url.blank?
+              .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                p
+                  span.glyphicon.glyphicon-link
+                  | &nbsp;&nbsp;
+                  a href="#{c.candidate_url}" target="_blank"  More at SmartVoter.org
+            - unless c.questions_url.blank?
+              .col-xs-6.col-sm-6.col-md-4.col-lg-4
+                p
+                  span.glyphicon.glyphicon-link
+                  | &nbsp;&nbsp;
+                  a href="#{c.questions_url}" target="_blank"  Q&amp;A with SmartVoter
+
+  .row.kpcc-footer
+    footer
+      ul.list-inline
+        li
+          a href="http://scpr.org/terms/"  Terms &amp; Conditions
+        li
+          a href="http://scpr.org/privacy/"  Privacy
+        li
+          a href="http://scpr.org/web_site_feedback"  Website Feedback
+        li
+          a href="http://scpr.org/"  Copyright 2013 © Southern California Public Radio
+
+/! end main container
+
+/! begin scripts
+script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" 
+script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js" 
+/! end scripts
+/! begin chartbeat
+javascript:
+  var _sf_async_config = { uid: 33583, domain: 'projects.scpr.org', useCanonical:true };
+  (function() {
+      function loadChartbeat() {
+          window._sf_endpt = (new Date()).getTime();
+          var e = document.createElement('script');
+          e.setAttribute('language', 'javascript');
+          e.setAttribute('type', 'text/javascript');
+          e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js');
+          document.body.appendChild(e);
+      };
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+/! end chartbeat
+/! begin google analytics
+javascript:
+  var hostName = 'projects.scpr.org';
+  var _gaq = _gaq || [];
+  _gaq.push(
+      ['_setAccount', 'UA-624724-1'],
+      ['_setDomainName', hostName],
+      ['_setCustomVar', 6, 'Station', 'Southern California Public Radio', 2],
+      ['_setCustomVar', 7, 'PageType', 'Story', 3],
+      ['_trackPageview'],
+      ['b._setAccount', 'UA-18188937-11'],
+      ['b._setDomainName', hostName],
+      ['b._setCustomVar', 6, 'Station', 'Southern California Public Radio', 2],
+      ['b._setCustomVar', 7, 'PageType', 'Story', 3],
+      ['b._trackPageview']
+  );
+  (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+/! end google analytics
+/! begin webtrends stats
+script src="http://media.scpr.org/assets/scripts/webtrends.v2.js" 
+javascript:
+  /!/
+      var _tag=new WebTrends();
+      _tag.dcsGetId();
+  /!/
+javascript:
+  /!/
+      _tag.dcsCustom=function(){
+      }
+  _tag.dcsCollect();
+  /!/
+noscript
+  div
+    img#DCSIMG alt="DCSIMG" height="1" src="http://statse.webtrendslive.com/dcsyqctzwuz5bdsebpmwhwe8w_2p8d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.3.0&amp;WT.dcssip=www.scpr.org" width="1" /
+/! end webtrends stats
+/! begin comscore stats
+javascript:
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6035974", c3: "", c4: "" });
+  (function() {
+  var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+  s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+  el.parentNode.insertBefore(s, el);
+  })();
+noscript
+  img src="http://b.scorecardresearch.com/p?c1=2&c2=6035974&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" /
+/! end comscore stats
+/! end body
+/! end document
