@@ -206,7 +206,7 @@ h3.brand {
   }
 
 .intro {
-  @include image-2x("../images/ico-twitter@2x.png",1400px, 61px);
+  @include image-2x("../images/bg-pulldown@2x.png",1400px, 61px);
   background:url('../images/bg-pulldown.png') repeat-x center top;
   margin-top:-24px;
   position:relative;
