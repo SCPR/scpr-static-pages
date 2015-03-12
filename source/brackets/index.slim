@@ -36,21 +36,21 @@ header.hero
   .bound
     .credits
       h3.brand: a href="http://scpr.org" title="KPCC" 89.3 KPCC
-      p Presents the 2nd Annual
+      p Presents the 3rd Annual
     .titling
       h1
         | Public Radio 
         b.bracket: span Bracket
         em Madness
-      p.explainer It's March, which means it's time for KPCC's second annual Public Radio Bracket Madness — the bracket poll in which we ask you to pick your favorite public radio shows!
+      p.explainer It's March, which means it's time for KPCC's third annual Public Radio Bracket Madness — the bracket poll in which we ask you to pick your favorite public radio shows!
   figure.hero-photo
     img src="http://a.scpr.org/i/6fd86959d19feffd8d25ebb6a7d63b76/58298-eight.jpg"
     figcaption
       p Ira Glass hoists the 2013 Bracket Madness trophy on behalf of This American Life.
   .tease
     p: a.button href="#main" Cast your vote now!
-  .download
-    p: a href="images/brackets/PublicRadioBracket2014.pdf" Download Brackets (PDF)
+  / .download
+  /   p: a href="images/brackets/PublicRadioBracket2014.pdf" Download Brackets (PDF)
   .sharing
     ul
       li.label Share this:
@@ -59,80 +59,80 @@ header.hero
 main#main
   .intro
     .bound
-      .email-signup
-        /! Begin MailChimp Signup Form
-        form#mc-embedded-subscribe-form.validate action="http://scpr.us2.list-manage.com/subscribe/post?u=5e1e4451f92ffc0fa746da7fa&amp;id=1f2131ce65" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank" 
-          input name="EMAIL" placeholder="Sign up to get notified for each round of voting!" required="true" type="email" value="" 
-          input name="subscribe" type="submit" value="Submit" /
-          div style=("position: absolute; left: -5000px;") 
-            input name="b_5e1e4451f92ffc0fa746da7fa_1f2131ce65" type="text" value="" /
+      / .email-signup
+      /   /! Begin MailChimp Signup Form
+      /   form#mc-embedded-subscribe-form.validate action="http://scpr.us2.list-manage.com/subscribe/post?u=5e1e4451f92ffc0fa746da7fa&amp;id=1f2131ce65" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank" 
+      /     input name="EMAIL" placeholder="Sign up to get notified for each round of voting!" required="true" type="email" value="" 
+      /     input name="subscribe" type="submit" value="Submit" /
+      /     div style=("position: absolute; left: -5000px;") 
+      /       input name="b_5e1e4451f92ffc0fa746da7fa_1f2131ce65" type="text" value="" /
       h4.current-round
         | Current Round : 
-        strong Championship
+        strong Round 1
   
-  // FINAL FOUR
-  section.region.final-four
-    header
-      .bound
-        h3
-          | Final Rounds
-    .bracket
-      .round.round-two
-        h5
-          | West & Central
-        /! Matchup - Snap Judgement vs. Wait Wait
-        article.matchup.final
-          .inner
-            span.close Close
-            .show.first.snap-judgement
-              h2
-                | Snap Judgment
-              .overlay
-            .or
-              | or
-            .show.second.wait-wait.winner
-              h2
-                | Wait Wait... Don't Tell Me!
-              .overlay
-            .poll
-      .round.round-two.right
-        h5
-          | Upper & Lower NE
-        /! Matchup - Radiolab or Fresh Air
-        article.matchup.final
-          .inner
-            span.close Close
-            .show.first.radiolab.winner
-              h2
-                | Radiolab
-              .overlay
-            .or
-              | or
-            .show.second.fresh-air
-              h2
-                | Fresh Air
-              .overlay
-            .poll
-      .round.regional-final.current-round
-        h5
-          | Championship
-        article.matchup.active
-          .inner
-            span.close Close
-            .show.first.wait-wait
-              h2
-                | Wait Wait... Don't Tell Me!
-              .overlay
-            .or
-              | or
-            .show.second.radiolab
-              h2
-                | Radiolab
-              .overlay
-            .poll
-              script charset="utf-8" src="http://static.polldaddy.com/p/7929633.js" type="text/javascript" 
-              noscript
-                a href="http://polldaddy.com/poll/7929633/"  Wait Wait or Radiolab?
+  // FOUR
+  / section.region.final-four
+  /   header
+  /     .bound
+  /       h3
+  /         | Rounds
+  /   .bracket
+  /     .round.round-two
+  /       h5
+  /         | West & Central
+  /       /! Matchup - Snap Judgement vs. Wait Wait
+  /       article.matchup.final
+  /         .inner
+  /           span.close Close
+  /           .show.first.snap-judgement
+  /             h2
+  /               | Snap Judgment
+  /             .overlay
+  /           .or
+  /             | or
+  /           .show.second.wait-wait
+  /             h2
+  /               | Wait Wait... Don't Tell Me!
+  /             .overlay
+  /           .poll
+  /     .round.round-two.right
+  /       h5
+  /         | Upper & Lower NE
+  /       /! Matchup - Radiolab or Fresh Air
+  /       article.matchup.final
+  /         .inner
+  /           span.close Close
+  /           .show.first.radiolab
+  /             h2
+  /               | Radiolab
+  /             .overlay
+  /           .or
+  /             | or
+  /           .show.second.fresh-air
+  /             h2
+  /               | Fresh Air
+  /             .overlay
+  /           .poll
+  /     .round.regional-final.current-round
+  /       h5
+  /         | Championship
+  /       article.matchup.active
+  /         .inner
+  /           span.close Close
+  /           .show.first.wait-wait
+  /             h2
+  /               | Wait Wait... Don't Tell Me!
+  /             .overlay
+  /           .or
+  /             | or
+  /           .show.second.radiolab
+  /             h2
+  /               | Radiolab
+  /             .overlay
+  /           .poll
+  /             script charset="utf-8" src="http://static.polldaddy.com/p/7929633.js" type="text/javascript" 
+  /             noscript
+  /               a href="http://polldaddy.com/poll/7929633/"  Wait Wait or Radiolab?
 
   
   // WEST BRACKET
@@ -141,13 +141,13 @@ main#main
       .bound
         h3 West
     .bracket
-      .round.round-one
+      .round.round-one.current-round
         h5 Round 1
         /! Matchup - Airtalk vs. 99% Invisible
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.ninety-nine.winner
+            .show.first.ninety-nine
               h2 99% Invisible
               .overlay
             .or or
@@ -155,10 +155,10 @@ main#main
               h2 AirTalk
               .overlay
         /! Matchup - Snap Judgement vs. Take Two
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.snap-judgement.winner
+            .show.first.snap-judgement
               h2 Snap Judgment
               .overlay
             .or or
@@ -166,25 +166,25 @@ main#main
               h2 Take Two
               .overlay
             .poll
-      .round.round-one.right
+      .round.round-one.right.current-round
         h5 Round 1
         /! Matchup - Press Play vs. Live Wire
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
             .show.first.press-play
               h2 Press Play
               .overlay
             .or or
-            .show.second.live-wire.winner
+            .show.second.live-wire
               h2 Live Wire
               .overlay
             .poll
         /! Matchup - Dinner Party vs. Bullseye 
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.dinner-party.winner
+            .show.first.dinner-party
               h2 The Dinner Party Download
               .overlay
             .or or
@@ -194,46 +194,16 @@ main#main
             .poll
       .round.round-two
         h5 Round 2
-        article class="matchup final"
-          .inner
-            span.close Close
-            .show.first.ninety-nine.winner
-              h2 99% Invisible
-              .overlay
-            .or or
-            .show.second.snap-judgement
-              h2 Snap Judgment
-              .overlay
-            .poll
+        article class="matchup inactive"
+          h3 TBD
       .round.round-two.right
         h5 Round 2
-        article class="matchup final"
-          .inner
-            span.close Close
-            .show.first.live-wire
-              h2 Live Wire
-              .overlay
-            .or or
-            .show.second.dinner-party.winner
-              h2 The Dinner Party Download
-              .overlay
-            .poll
-      .round.regional-final.current-round
-        h5 Regional Final
-        article class="matchup active"
-          .inner
-            span.close Close
-            .show.first.ninety-nine
-              h2 99% Invisible
-              .overlay
-            .or or
-            .show.second.dinner-party
-              h2 The Dinner Party Download
-              .overlay
-            .poll
-              script charset="utf-8" src="http://static.polldaddy.com/p/7903745.js" type="text/javascript" 
-              noscript
-                a href="http://polldaddy.com/poll/7903745/"  99% Invisible or The Dinner Party Download?
+        article class="matchup inactive"
+          h3 TBD
+      .round.regional-final
+        h5 Regional
+        article class="matchup inactive"
+          h3 TBD
 
   // CENTRAL BRACKET
   section.region
@@ -241,13 +211,13 @@ main#main
       .bound
         h3 Central
     .bracket
-      .round.round-one
+      .round.round-one.current-round
         h5 Round 1
         /! Matchup - Wait Wait vs. Wits
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.wait-wait.winner
+            .show.first.wait-wait
               h2 Wait Wait... Don't Tell Me!
               .overlay
             .or or
@@ -256,36 +226,36 @@ main#main
               .overlay
             .poll
         /! Matchup - Daily Circuit vs. Afternoon Shift 
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
             .show.first.daily-circuit
               h2 The Daily Circuit
               .overlay
             .or or
-            .show.second.afternoon-shift.winner
+            .show.second.afternoon-shift
               h2 The Afternoon Shift
               .overlay
             .poll
-      .round.round-one.right
+      .round.round-one.right.current-round
         h5 Round 1
         /! Matchup - Q with Jian Ghomeshi vs. WireTap
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
             .show.first.q
               h2 Q with Jian Ghomeshi
               .overlay
             .or or
-            .show.second.wiretap.winner
+            .show.second.wiretap
               h2 WireTap
               .overlay
             .poll
         /! Matchup - Marketplace vs. Splendid Table
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.marketplace.winner
+            .show.first.marketplace
               h2 Marketplace
               .overlay
             .or or
@@ -295,49 +265,19 @@ main#main
             .poll
       .round.round-two
         h5 Round 2
-        /! Matchup - Wait Wait vs. Afternoon Shift
-        article class="matchup final"
-          .inner
-            span.close Close
-            .show.first.wait-wait.winner
-              h2 Wait Wait... Don't Tell Me!
-              .overlay
-            .or or
-            .show.second.afternoon-shift
-              h2 The Afternoon Shift
-              .overlay
-            .poll
+        /! Matchup - 
+        article class="matchup inactive"
+          h3 TBD
       .round.round-two.right
         h5 Round 2
-        /! Matchup - WireTap vs. Marketplace
-        article class="matchup final"
-          .inner
-            span.close Close
-            .show.first.wiretap
-              h2 Wiretap
-              .overlay
-            .or or
-            .show.second.marketplace.winner
-              h2 Marketplace
-              .overlay
-            .poll
-      .round.regional-final.current-round
-        h5 Regional Final
-        /! Matchup - Wait Wait vs. Marketplace
-        article class="matchup active"
-          .inner
-            span.close Close
-            .show.first.wait-wait
-              h2 Wait Wait... Don't Tell Me!
-              .overlay
-            .or or
-            .show.second.marketplace
-              h2 Marketplace
-              .overlay
-            .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7903746.js"
-              noscript
-                a href="http://polldaddy.com/poll/7903746/" Wait Wait or Marketplace?
+        /! Matchup - 
+        article class="matchup inactive"
+          h3 TBD
+      .round.regional-final
+        h5 Regional
+        /! Matchup - 
+        article class="matchup inactive"
+          h3 TBD
 
   // UPPER NE BRACKET
   section.region
@@ -345,13 +285,13 @@ main#main
       .bound
         h3 Upper Northeast
     .bracket
-      .round.round-one
+      .round.round-one.current-round
         h5 Round 1
         /! Matchup - Radiolab vs. Thew Moth
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.radiolab.winner
+            .show.first.radiolab
               h2 Radiolab
               .overlay
             .or or
@@ -360,10 +300,10 @@ main#main
               .overlay
             .poll
         /! Matchup - On the Media vs. Radio Boston
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.on-the-media.winner
+            .show.first.on-the-media
               h2 On the Media
               .overlay
             .or or
@@ -371,13 +311,13 @@ main#main
               h2 Radio Boston
               .overlay
             .poll
-      .round.round-one.right
+      .round.round-one.right.current-round
         h5 Round 1
         /! Matchup - Studio 360 vs. Ask Me Another
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.studio-threesixty.winner
+            .show.first.studio-threesixty
               h2 Studio 360
               .overlay
             .or or
@@ -386,10 +326,10 @@ main#main
               .overlay
             .poll
         /! Matchup - The Brian Lehrer Show vs. Only A Game
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.brian-lehrer.winner
+            .show.first.brian-lehrer
               h2 The Brian Lehrer Show
               .overlay
             .or or
@@ -399,49 +339,19 @@ main#main
             .poll
       .round.round-two
         h5 Round 2
-        /! Matchup - Radiolab vs. On the Media
-        article class="matchup final"
-          .inner
-            span.close Close
-            .show.first.radiolab.winner
-              h2 Radiolab
-              .overlay
-            .or or
-            .show.second.on-the-media
-              h2 On the Media
-              .overlay
-            .poll
+        /! Matchup - 
+        article class="matchup inactive"
+          h3 TBD
       .round.round-two.right
         h5 Round 2
-        /! Matchup - Studio 360 vs. Brian Lehrer
-        article class="matchup final"
-          .inner
-            span.close Close
-            .show.first.studio-threesixty.winner
-              h2 Studio 360
-              .overlay
-            .or or
-            .show.second.brian-lehrer
-              h2 The Brian Lehrer Show
-              .overlay
-            .poll
-      .round.regional-final.current-round
-        h5 Regional Final
-        /! Matchup - Radiolab vs. Studio 360
-        article class="matchup active"
-          .inner
-            span.close Close
-            .show.first.radiolab
-              h2 Radiolab
-              .overlay
-            .or or
-            .show.second.studio-threesixty
-              h2 Studio 360
-              .overlay
-            .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7903747.js"
-              noscript
-                a href="http://polldaddy.com/poll/7903747/" Radiolab or Studio 360?
+        /! Matchup - 
+        article class="matchup inactive"
+          h3 TBD
+      .round.regional-final
+        h5 Regional
+        /! Matchup - 
+        article class="matchup inactive"
+          h3 TBD
 
   // LOWER NE BRACKET
   section.region
@@ -449,13 +359,13 @@ main#main
       .bound
         h3 Lower Northeast
     .bracket
-      .round.round-one
+      .round.round-one.current-round
         h5 Round 1
         /! Matchup - Fresh Air vs. Tell Me More
-        article class="matchup final"
+        article class="matchup"
           span.close Close
           .inner
-            .show.first.fresh-air.winner
+            .show.first.fresh-air
               h2 Fresh Air
               .overlay
             .or or
@@ -464,10 +374,10 @@ main#main
               .overlay
             .poll
         /! Matchup - Planet Money vs. Latino USA
-        article class="matchup final"
+        article class="matchup"
           span.close Close
           .inner
-            .show.first.planet-money.winner
+            .show.first.planet-money
               h2 Planet Money
               .overlay
             .or or
@@ -475,25 +385,25 @@ main#main
               h2 Latino USA
               .overlay
             .poll
-      .round.round-one.right
+      .round.round-one.right.current-round
         h5 Round 1
         /! Matchup - TED Radio Hour vs. Weekend Edition Saturday
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
             .show.first.ted
               h2 TED Radio Hour
               .overlay
             .or or
-            .show.second.weekend-edition.winner
+            .show.second.weekend-edition
               h2 Weekend Edition Saturday
               .overlay
             .poll
         /! Matchup - Kojo Nnamdi vs. State of Things
-        article class="matchup final"
+        article class="matchup"
           .inner
             span.close Close
-            .show.first.state-of-things.winner
+            .show.first.state-of-things
               h2 State of Things
               .overlay
             .or or
@@ -503,49 +413,19 @@ main#main
             .poll
       .round.round-two
         h5 Round 2
-        /! Matchup - Fresh Air vs. Planet Money
-        article class="matchup final"
-          span.close Close
-          .inner
-            .show.first.fresh-air.winner
-              h2 Fresh Air
-              .overlay
-            .or or
-            .show.second.planet-money
-              h2 Planet Money
-              .overlay
-            .poll
+        /! Matchup - 
+        article class="matchup inactive"
+          h3 TBD
       .round.round-two.right
         h5 Round 2
-        /! Matchup - Weekend Edition Saturday vs. State of Things
-        article class="matchup final"
-          .inner
-            span.close Close
-            .show.first.weekend-edition.winner
-              h2 Weekend Edition Saturday
-              .overlay
-            .or or
-            .show.second.state-of-things
-              h2 State of Things
-              .overlay
-            .poll
-      .round.regional-final.current-round
-        h5 Regional Final
-        /! Matchup - Fresh Air vs. Weekend Edition Saturday
-        article class="matchup active"
-          span.close Close
-          .inner
-            .show.first.fresh-air
-              h2 Fresh Air
-              .overlay
-            .or or
-            .show.second.weekend-edition
-              h2 Weekend Edition
-              .overlay
-            .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/7903748.js"
-              noscript
-                a href="http://polldaddy.com/poll/7903748/" Fresh Air or Weekend Edition Saturday?
+        /! Matchup - 
+        article class="matchup inactive"
+          h3 TBD
+      .round.regional-final
+        h5 Regional
+        /! Matchup - 
+        article class="matchup inactive"
+          h3 TBD
 
 footer#footer
   .bound
