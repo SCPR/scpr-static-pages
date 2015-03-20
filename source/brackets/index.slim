@@ -66,9 +66,9 @@ main#main
       /     input name="subscribe" type="submit" value="Submit" /
       /     div style=("position: absolute; left: -5000px;") 
       /       input name="b_5e1e4451f92ffc0fa746da7fa_1f2131ce65" type="text" value="" /
-      h4.current-round
+      h4
         | Current Round : 
-        strong Round 1
+        strong Round 2
   
   // FOUR
   / section.region.final-four
@@ -113,7 +113,7 @@ main#main
   /               | Fresh Air
   /             .overlay
   /           .poll
-  /     .round.regional-final.current-round
+  /     .round.regional-final
   /       h5
   /         | Championship
   /       article.matchup.active
@@ -141,13 +141,13 @@ main#main
       .bound
         h3 West
     .bracket
-      .round.round-one.current-round
+      .round.round-one
         h5 Round 1
         /! Matchup - Snap Judgment vs. Live Wire
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.snap-judgement
+            .show.first.snap-judgement.winner
               h2 Snap Judgment
               .overlay
             .or or
@@ -155,14 +155,12 @@ main#main
               h2 Live Wire
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716473.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716473/" Snap Judgment or Live Wire?
+              
         /! Matchup - Strangers vs. Song Exploder
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.strangers
+            .show.first.strangers.winner
               h2 Strangers
               .overlay
             .or or
@@ -170,16 +168,14 @@ main#main
               h2 Song Exploder
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716475.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716475/" Strangers or Song Exploder?
-      .round.round-one.right.current-round
+
+      .round.round-one.right
         h5 Round 1
         /! Matchup - The Frame vs. Off-Ramp
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.the-frame
+            .show.first.the-frame.winner
               h2 The Frame
               .overlay
             .or or
@@ -187,32 +183,52 @@ main#main
               h2 Off-Ramp
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716477.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716477/" The Frame or Off-Ramp?
+
         /! Matchup - Dinner Party vs. 99% Invisible 
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
             .show.first.dinner-party
               h2 Dinner Party Download
               .overlay
             .or or
+            .show.second.ninety-nine.winner
+              h2 99% Invisible
+              .overlay
+            .poll
+
+      .round.round-two.current-round
+        h5 Round 2
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.snap-judgement
+              h2 Snap Judgment
+              .overlay
+            .or or
+            .show.second.strangers
+              h2 Strangers
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743645.js"
+              noscript
+                a href="http://polldaddy.com/poll/8743645/" Snap or Strangers?
+      .round.round-two.right.current-round
+        h5 Round 2
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.the-frame
+              h2 The Frame
+              .overlay
+            .or or
             .show.second.ninety-nine
               h2 99% Invisible
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716480.js"
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743649.js"
               noscript
-                a href="http://polldaddy.com/poll/8716480/" Dinner Party Download or 99% Invisible?
-      .round.round-two
-        h5 Round 2
-        article class="matchup inactive"
-          h3 TBD
-      .round.round-two.right
-        h5 Round 2
-        article class="matchup inactive"
-          h3 TBD
+                a href="http://polldaddy.com/poll/8743649/" The Frame or 99PI?
       .round.regional-final
         h5 Regional
         article class="matchup inactive"
@@ -224,13 +240,13 @@ main#main
       .bound
         h3 Central
     .bracket
-      .round.round-one.current-round
+      .round.round-one
         h5 Round 1
         /! Matchup - Wait Wait vs. WireTap
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.wait-wait
+            .show.first.wait-wait.winner
               h2 Wait Wait... Don't Tell Me!
               .overlay
             .or or
@@ -238,14 +254,12 @@ main#main
               h2 WireTap
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716485.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716485/" Wait Wait or WireTap?
+
         /! Matchup - This American Life vs. Criminal
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.this-american-life
+            .show.first.this-american-life.winner
               h2 This American Life
               .overlay
             .or or
@@ -253,16 +267,14 @@ main#main
               h2 Criminal
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716486.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716486/" This American Life or Criminal?
-      .round.round-one.right.current-round
+
+      .round.round-one.right
         h5 Round 1
         /! Matchup - Serial vs. Sound Opinions
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.serial
+            .show.first.serial.winner
               h2 Serial
               .overlay
             .or or
@@ -270,14 +282,12 @@ main#main
               h2 Sound Opinions
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716493.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716493/" Serial or Sound Opinions?
+
         /! Matchup - Marketplace vs. The Afternoon Shift
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.marketplace
+            .show.first.marketplace.winner
               h2 Marketplace
               .overlay
             .or or
@@ -285,19 +295,41 @@ main#main
               h2 The Afternoon Shift
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716496.js"
+
+      .round.round-two.current-round
+        h5 Round 2
+        /! Matchup - 
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.wait-wait
+              h2 Wait Wait... Don't Tell Me!
+              .overlay
+            .or or
+            .show.second.this-american-life
+              h2 This American Life
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743654.js"
               noscript
-                a href="http://polldaddy.com/poll/8716496/" Snap Judgment or The Afternoon Shift?
-      .round.round-two
+                a href="http://polldaddy.com/poll/8743654/" Wait Wait or This American Life?
+      .round.round-two.right.current-round
         h5 Round 2
         /! Matchup - 
-        article class="matchup inactive"
-          h3 TBD
-      .round.round-two.right
-        h5 Round 2
-        /! Matchup - 
-        article class="matchup inactive"
-          h3 TBD
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.serial
+              h2 Serial
+              .overlay
+            .or or
+            .show.second.marketplace
+              h2 Marketplace
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743656.js"
+              noscript
+                a href="http://polldaddy.com/poll/8743656/" Serial or Marketplace?
       .round.regional-final
         h5 Regional
         /! Matchup - 
@@ -310,13 +342,13 @@ main#main
       .bound
         h3 Upper Northeast
     .bracket
-      .round.round-one.current-round
+      .round.round-one
         h5 Round 1
         /! Matchup - Radiolab vs. Brian Lehrer
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.radiolab
+            .show.first.radiolab.winner
               h2 Radiolab
               .overlay
             .or or
@@ -324,66 +356,82 @@ main#main
               h2 The Brian Lehrer Show
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716505.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716505/" Radiolab or Brian Lehrer?
+
         /! Matchup - Death, Sex & Money vs. StartUp
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
             .show.first.death-sex-money
               h2 Death, Sex & Money
               .overlay
             .or or
-            .show.second.startup
+            .show.second.startup.winner
               h2 StartUp
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716508.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716508/" Death, Sex & Money vs. StartUp?
-      .round.round-one.right.current-round
+
+      .round.round-one.right
         h5 Round 1
         /! Matchup - Science Friday vs. Freakonomics Radio
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
             .show.first.science-friday
               h2 Science Friday
               .overlay
             .or or
-            .show.second.freakonomics
+            .show.second.freakonomics.winner
               h2 Freakonomics Radio
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716510.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716510/" Science Friday or Freakonomics Radio?
+
         /! Matchup - Studio 360 vs. On The Media
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
             .show.first.studio-threesixty
               h2 Studio 360
               .overlay
             .or or
+            .show.second.on-the-media.winner
+              h2 On The Media
+              .overlay
+            .poll
+
+      .round.round-two.current-round
+        h5 Round 2
+        /! Matchup - 
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.radiolab
+              h2 Radiolab
+              .overlay
+            .or or
+            .show.second.startup
+              h2 StartUp
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743661.js"
+              noscript
+                a href="http://polldaddy.com/poll/8743661/" Radiolab or StartUp?
+      .round.round-two.right.current-round
+        h5 Round 2
+        /! Matchup - 
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.freakonomics
+              h2 Freakonomics Radio
+              .overlay
+            .or or
             .show.second.on-the-media
               h2 On The Media
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716512.js"
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743664.js"
               noscript
-                a href="http://polldaddy.com/poll/8716512/" Studio 360 or On The Media?
-      .round.round-two
-        h5 Round 2
-        /! Matchup - 
-        article class="matchup inactive"
-          h3 TBD
-      .round.round-two.right
-        h5 Round 2
-        /! Matchup - 
-        article class="matchup inactive"
-          h3 TBD
+                a href="http://polldaddy.com/poll/8743664/" Freakonomics or On the Media?
       .round.regional-final
         h5 Regional
         /! Matchup - 
@@ -396,13 +444,13 @@ main#main
       .bound
         h3 Lower Northeast
     .bracket
-      .round.round-one.current-round
+      .round.round-one
         h5 Round 1
         /! Matchup - Fresh Air vs. The State of Things
-        article class="matchup"
+        article class="matchup final"
           span.close Close
           .inner
-            .show.first.fresh-air
+            .show.first.fresh-air.winner
               h2 Fresh Air
               .overlay
             .or or
@@ -410,14 +458,12 @@ main#main
               h2 The State of Things
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716513.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716513/" Studio 360 or The State of Things?
+
         /! Matchup - Invisibilia vs. Pop Culture Happy Hour
-        article class="matchup"
+        article class="matchup final"
           span.close Close
           .inner
-            .show.first.invisibilia
+            .show.first.invisibilia.winner
               h2 Invisibilia
               .overlay
             .or or
@@ -425,16 +471,14 @@ main#main
               h2 Pop Culture Happy Hour
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716516.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716516/" Invisibilia or Pop Culture Happy Hour?
-      .round.round-one.right.current-round
+
+      .round.round-one.right
         h5 Round 1
         /! Matchup - All Things Considered vs. Morning Edition
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.all-things-considered
+            .show.first.all-things-considered.winner
               h2 All Things Considered
               .overlay
             .or or
@@ -442,34 +486,54 @@ main#main
               h2 Morning Edition
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716517.js"
-              noscript
-                a href="http://polldaddy.com/poll/8716517/" All Things Considered or Morning Edition?
+
         /! Matchup - Weekend Edition Saturday vs. Planet Money
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
             .show.first.weekend-edition
               h2 Weekend Edition Saturday
               .overlay
             .or or
+            .show.second.planet-money.winner
+              h2 Planet Money
+              .overlay
+            .poll
+
+      .round.round-two.current-round
+        h5 Round 2
+        /! Matchup - 
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.fresh-air
+              h2 Fresh Air
+              .overlay
+            .or or
+            .show.second.invisibilia
+              h2 Invisibilia
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743666.js"
+              noscript
+                a href="http://polldaddy.com/poll/8743666/" Fresh Air or Invisibilia?
+      .round.round-two.right.current-round
+        h5 Round 2
+        /! Matchup - 
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.all-things-considered
+              h2 All Things Considered
+              .overlay
+            .or or
             .show.second.planet-money
               h2 Planet Money
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8716519.js"
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743668.js"
               noscript
-                a href="http://polldaddy.com/poll/8716519/" Weekend Edition Saturday or Planet Money?
-      .round.round-two
-        h5 Round 2
-        /! Matchup - 
-        article class="matchup inactive"
-          h3 TBD
-      .round.round-two.right
-        h5 Round 2
-        /! Matchup - 
-        article class="matchup inactive"
-          h3 TBD
+                a href="http://polldaddy.com/poll/8743668/" ATC or Planet Money?
       .round.regional-final
         h5 Regional
         /! Matchup - 
