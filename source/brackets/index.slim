@@ -54,8 +54,8 @@ header.hero
   .sharing
     ul
       li.label Share this:
-      li: a.facebook href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprojects.scpr.org%2Fstatic%2Fmarchmadness%2F" onClick="return fbs_click()" target="_blank" title="Share This on Facebook" Facebook
-      li: a.twitter href="http://twitter.com/share?text=2014 Public Radio Bracket Madness&url=http%3A%2F%2Fprojects.scpr.org%2Fstatic%2Fmarchmadness%2F" Twitter
+      li: a.facebook href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fprojects.scpr.org%2Fstatic%2Fmarchmadness%2F2015%2F" onClick="return fbs_click()" target="_blank" title="Share This on Facebook" Facebook
+      li: a.twitter href="http://twitter.com/share?text=2014 Public Radio Bracket Madness&url=http%3A%2F%2Fprojects.scpr.org%2Fstatic%2Fmarchmadness%2F2015%2F" Twitter
 main#main
   .intro
     .bound
@@ -68,7 +68,7 @@ main#main
       /       input name="b_5e1e4451f92ffc0fa746da7fa_1f2131ce65" type="text" value="" /
       h4
         | Current Round : 
-        strong Round 2
+        strong Regional Finals
   
   // FOUR
   / section.region.final-four
@@ -197,42 +197,50 @@ main#main
               .overlay
             .poll
 
-      .round.round-two.current-round
+      .round.round-two
         h5 Round 2
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
             .show.first.snap-judgement
               h2 Snap Judgment
               .overlay
             .or or
-            .show.second.strangers
+            .show.second.strangers.winner
               h2 Strangers
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743645.js"
-              noscript
-                a href="http://polldaddy.com/poll/8743645/" Snap or Strangers?
-      .round.round-two.right.current-round
+
+      .round.round-two.right
         h5 Round 2
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
             .show.first.the-frame
               h2 The Frame
               .overlay
             .or or
+            .show.second.ninety-nine.winner
+              h2 99% Invisible
+              .overlay
+            .poll
+
+      .round.regional-final.current-round
+        h5 Regional
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.strangers
+              h2 Strangers
+              .overlay
+            .or or
             .show.second.ninety-nine
               h2 99% Invisible
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743649.js"
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8753566.js"
               noscript
-                a href="http://polldaddy.com/poll/8743649/" The Frame or 99PI?
-      .round.regional-final
-        h5 Regional
-        article class="matchup inactive"
-          h3 TBD
+                a href="http://polldaddy.com/poll/8753566/" Strangers or 99% Invisible?
 
   // CENTRAL BRACKET
   section.region
@@ -296,30 +304,28 @@ main#main
               .overlay
             .poll
 
-      .round.round-two.current-round
+      .round.round-two
         h5 Round 2
         /! Matchup - 
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
             .show.first.wait-wait
               h2 Wait Wait... Don't Tell Me!
               .overlay
             .or or
-            .show.second.this-american-life
+            .show.second.this-american-life.winner
               h2 This American Life
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743654.js"
-              noscript
-                a href="http://polldaddy.com/poll/8743654/" Wait Wait or This American Life?
-      .round.round-two.right.current-round
+
+      .round.round-two.right
         h5 Round 2
         /! Matchup - 
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.serial
+            .show.first.serial.winner
               h2 Serial
               .overlay
             .or or
@@ -327,15 +333,24 @@ main#main
               h2 Marketplace
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743656.js"
-              noscript
-                a href="http://polldaddy.com/poll/8743656/" Serial or Marketplace?
-      .round.regional-final
+
+      .round.regional-final.current-round
         h5 Regional
         /! Matchup - 
-        article class="matchup inactive"
-          h3 TBD
-
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.this-american-life
+              h2 This American Life
+              .overlay
+            .or or
+            .show.second.serial
+              h2 Serial
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8753575.js"
+              noscript
+                a href="http://polldaddy.com/poll/8753575/" This American Life or Serial?
   // UPPER NE BRACKET
   section.region
     header
@@ -398,8 +413,38 @@ main#main
               .overlay
             .poll
 
-      .round.round-two.current-round
+      .round.round-two
         h5 Round 2
+        /! Matchup - 
+        article class="matchup final"
+          .inner
+            span.close Close
+            .show.first.radiolab.winner
+              h2 Radiolab
+              .overlay
+            .or or
+            .show.second.startup
+              h2 StartUp
+              .overlay
+            .poll
+
+      .round.round-two.right
+        h5 Round 2
+        /! Matchup - 
+        article class="matchup final"
+          .inner
+            span.close Close
+            .show.first.freakonomics
+              h2 Freakonomics Radio
+              .overlay
+            .or or
+            .show.second.on-the-media.winner
+              h2 On The Media
+              .overlay
+            .poll
+
+      .round.regional-final.current-round
+        h5 Regional
         /! Matchup - 
         article class="matchup"
           .inner
@@ -408,36 +453,13 @@ main#main
               h2 Radiolab
               .overlay
             .or or
-            .show.second.startup
-              h2 StartUp
-              .overlay
-            .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743661.js"
-              noscript
-                a href="http://polldaddy.com/poll/8743661/" Radiolab or StartUp?
-      .round.round-two.right.current-round
-        h5 Round 2
-        /! Matchup - 
-        article class="matchup"
-          .inner
-            span.close Close
-            .show.first.freakonomics
-              h2 Freakonomics Radio
-              .overlay
-            .or or
             .show.second.on-the-media
               h2 On The Media
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743664.js"
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8753577.js"
               noscript
-                a href="http://polldaddy.com/poll/8743664/" Freakonomics or On the Media?
-      .round.regional-final
-        h5 Regional
-        /! Matchup - 
-        article class="matchup inactive"
-          h3 TBD
-
+                a href="http://polldaddy.com/poll/8753577/" Radiolab or On The Media?
   // LOWER NE BRACKET
   section.region
     header
@@ -500,30 +522,28 @@ main#main
               .overlay
             .poll
 
-      .round.round-two.current-round
+      .round.round-two
         h5 Round 2
         /! Matchup - 
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
             .show.first.fresh-air
               h2 Fresh Air
               .overlay
             .or or
-            .show.second.invisibilia
+            .show.second.invisibilia.winner
               h2 Invisibilia
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743666.js"
-              noscript
-                a href="http://polldaddy.com/poll/8743666/" Fresh Air or Invisibilia?
-      .round.round-two.right.current-round
+
+      .round.round-two.right
         h5 Round 2
         /! Matchup - 
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.all-things-considered
+            .show.first.all-things-considered.winner
               h2 All Things Considered
               .overlay
             .or or
@@ -531,14 +551,24 @@ main#main
               h2 Planet Money
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8743668.js"
-              noscript
-                a href="http://polldaddy.com/poll/8743668/" ATC or Planet Money?
-      .round.regional-final
+
+      .round.regional-final.current-round
         h5 Regional
         /! Matchup - 
-        article class="matchup inactive"
-          h3 TBD
+        article class="matchup"
+          .inner
+            span.close Close
+            .show.first.invisibilia
+              h2 Invisibilia
+              .overlay
+            .or or
+            .show.second.all-things-considered
+              h2 All Things Considered
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8753578.js"
+              noscript
+                a href="http://polldaddy.com/poll/8753578/" Invisibilia or ATC?
 
 footer#footer
   .bound
