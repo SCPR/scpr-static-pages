@@ -68,71 +68,61 @@ main#main
       /       input name="b_5e1e4451f92ffc0fa746da7fa_1f2131ce65" type="text" value="" /
       h4
         | Current Round : 
-        strong Regional Finals
+        strong Semifinals
   
   // FOUR
-  / section.region.final-four
-  /   header
-  /     .bound
-  /       h3
-  /         | Rounds
-  /   .bracket
-  /     .round.round-two
-  /       h5
-  /         | West & Central
-  /       /! Matchup - Snap Judgement vs. Wait Wait
-  /       article.matchup.final
-  /         .inner
-  /           span.close Close
-  /           .show.first.snap-judgement
-  /             h2
-  /               | Snap Judgment
-  /             .overlay
-  /           .or
-  /             | or
-  /           .show.second.wait-wait
-  /             h2
-  /               | Wait Wait... Don't Tell Me!
-  /             .overlay
-  /           .poll
-  /     .round.round-two.right
-  /       h5
-  /         | Upper & Lower NE
-  /       /! Matchup - Radiolab or Fresh Air
-  /       article.matchup.final
-  /         .inner
-  /           span.close Close
-  /           .show.first.radiolab
-  /             h2
-  /               | Radiolab
-  /             .overlay
-  /           .or
-  /             | or
-  /           .show.second.fresh-air
-  /             h2
-  /               | Fresh Air
-  /             .overlay
-  /           .poll
-  /     .round.regional-final
-  /       h5
-  /         | Championship
-  /       article.matchup.active
-  /         .inner
-  /           span.close Close
-  /           .show.first.wait-wait
-  /             h2
-  /               | Wait Wait... Don't Tell Me!
-  /             .overlay
-  /           .or
-  /             | or
-  /           .show.second.radiolab
-  /             h2
-  /               | Radiolab
-  /             .overlay
-  /           .poll
-  /             script charset="utf-8" src="http://static.polldaddy.com/p/7929633.js" type="text/javascript" 
-  /             noscript
-  /               a href="http://polldaddy.com/poll/7929633/"  Wait Wait or Radiolab?
+  section.region.final-four
+    header
+      .bound
+        h3
+          | Semifinals
+    .bracket
+      .round.round-two.current-round
+        h5
+          | West & Central
+        /! Matchup - Snap Judgement vs. Wait Wait
+        article.matchup.active
+          .inner
+            span.close Close
+            .show.first.strangers
+              h2
+                | Strangers
+              .overlay
+            .or
+              | or
+            .show.second.this-american-life
+              h2
+                | This American Life
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8760655.js"
+              noscript
+                a href="http://polldaddy.com/poll/8760655/" Radiolab or Invisibilia?
+      .round.round-two.right.current-round
+        h5
+          | Upper & Lower NE
+        /! Matchup - Radiolab or Invisibilia
+        article.matchup.active
+          .inner
+            span.close Close
+            .show.first.radiolab
+              h2
+                | Radiolab
+              .overlay
+            .or
+              | or
+            .show.second.invisibilia
+              h2
+                | Invisibilia
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8760656.js"
+              noscript
+                a href="http://polldaddy.com/poll/8760656/" Radiolab or Invisibilia?
+      .round.regional-final
+        h5
+          | Championship
+        article.matchup
 
   
   // WEST BRACKET
@@ -225,12 +215,12 @@ main#main
               .overlay
             .poll
 
-      .round.regional-final.current-round
+      .round.regional-final
         h5 Regional
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.strangers
+            .show.first.strangers.winner
               h2 Strangers
               .overlay
             .or or
@@ -238,9 +228,6 @@ main#main
               h2 99% Invisible
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8753566.js"
-              noscript
-                a href="http://polldaddy.com/poll/8753566/" Strangers or 99% Invisible?
 
   // CENTRAL BRACKET
   section.region
@@ -334,13 +321,13 @@ main#main
               .overlay
             .poll
 
-      .round.regional-final.current-round
+      .round.regional-final
         h5 Regional
         /! Matchup - 
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.this-american-life
+            .show.first.this-american-life.winner
               h2 This American Life
               .overlay
             .or or
@@ -348,9 +335,6 @@ main#main
               h2 Serial
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8753575.js"
-              noscript
-                a href="http://polldaddy.com/poll/8753575/" This American Life or Serial?
   // UPPER NE BRACKET
   section.region
     header
@@ -443,13 +427,13 @@ main#main
               .overlay
             .poll
 
-      .round.regional-final.current-round
+      .round.regional-final
         h5 Regional
         /! Matchup - 
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.radiolab
+            .show.first.radiolab.winner
               h2 Radiolab
               .overlay
             .or or
@@ -457,9 +441,6 @@ main#main
               h2 On The Media
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8753577.js"
-              noscript
-                a href="http://polldaddy.com/poll/8753577/" Radiolab or On The Media?
   // LOWER NE BRACKET
   section.region
     header
@@ -552,13 +533,13 @@ main#main
               .overlay
             .poll
 
-      .round.regional-final.current-round
+      .round.regional-final
         h5 Regional
         /! Matchup - 
-        article class="matchup"
+        article class="matchup final"
           .inner
             span.close Close
-            .show.first.invisibilia
+            .show.first.invisibilia.winner
               h2 Invisibilia
               .overlay
             .or or
@@ -566,9 +547,6 @@ main#main
               h2 All Things Considered
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8753578.js"
-              noscript
-                a href="http://polldaddy.com/poll/8753578/" Invisibilia or ATC?
 
 footer#footer
   .bound
