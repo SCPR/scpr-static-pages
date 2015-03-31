@@ -68,7 +68,7 @@ main#main
       /       input name="b_5e1e4451f92ffc0fa746da7fa_1f2131ce65" type="text" value="" /
       h4
         | Current Round : 
-        strong Semifinals
+        strong Championship
   
   // FOUR
   section.region.final-four
@@ -77,14 +77,14 @@ main#main
         h3
           | Semifinals
     .bracket
-      .round.round-two.current-round
+      .round.round-two
         h5
           | West & Central
         /! Matchup - Snap Judgement vs. Wait Wait
-        article.matchup.active
+        article.matchup.final
           .inner
             span.close Close
-            .show.first.strangers
+            .show.first.strangers.winner
               h2
                 | Strangers
               .overlay
@@ -95,17 +95,14 @@ main#main
                 | This American Life
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8760655.js"
-              noscript
-                a href="http://polldaddy.com/poll/8760655/" Radiolab or Invisibilia?
-      .round.round-two.right.current-round
+      .round.round-two.right
         h5
           | Upper & Lower NE
         /! Matchup - Radiolab or Invisibilia
-        article.matchup.active
+        article.matchup.final
           .inner
             span.close Close
-            .show.first.radiolab
+            .show.first.radiolab.winner
               h2
                 | Radiolab
               .overlay
@@ -116,13 +113,26 @@ main#main
                 | Invisibilia
               .overlay
             .poll
-              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8760656.js"
-              noscript
-                a href="http://polldaddy.com/poll/8760656/" Radiolab or Invisibilia?
-      .round.regional-final
+      .round.regional-final.current-round
         h5
           | Championship
-        article.matchup
+        article.matchup.active
+          .inner
+            span.close Close
+            .show.first.strangers
+              h2
+                | Strangers
+              .overlay
+            .or
+              | or
+            .show.second.radiolab
+              h2
+                | Radiolab
+              .overlay
+            .poll
+              script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8771301.js"
+              noscript
+                a href="http://polldaddy.com/poll/8771301/" Strangers or Radiolab?
 
   
   // WEST BRACKET
